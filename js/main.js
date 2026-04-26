@@ -101,33 +101,6 @@ function initFloatingCards() {
   });
 }
 
-/* ── Email form ── */
-function initEmailForm() {
-  const form = document.getElementById('notifyForm');
-  if (!form) return;
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const input = form.querySelector('.notify-input');
-    const btn = form.querySelector('.notify-btn');
-    const lang = detectLang();
-    const msg = translations[lang]?.['dl.success'] || 'Registered! 🎉';
-
-    if (!input.value || !input.value.includes('@')) {
-      input.classList.add('error');
-      setTimeout(() => input.classList.remove('error'), 1200);
-      return;
-    }
-
-    btn.textContent = msg;
-    btn.disabled = true;
-    input.value = '';
-    setTimeout(() => {
-      btn.textContent = translations[lang]?.['dl.notify'] || 'Notify Me';
-      btn.disabled = false;
-    }, 4000);
-  });
-}
-
 /* ── Smooth scroll ── */
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -195,7 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initScrollAnimations();
   initFloatingCards();
-  initEmailForm();
   initSmoothScroll();
   animateCounters();
   initParallax();
