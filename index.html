@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Mind Mirror — AI 감정 일기 앱</title>
+    <meta
+      name="description"
+      content="Gemini AI가 매일의 일기를 분석하여 감정 패턴을 발견하고 마음 건강을 위한 인사이트를 제공하는 스마트 일기 앱"
+    />
+    <meta
+      name="keywords"
+      content="AI diary, emotion tracking, mental wellness, 감정 일기, AI 분석, 마음 건강, mind mirror, 일기 앱, Gemini AI"
+    />
+    <meta name="author" content="Mind Mirror" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#6C63FF" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://guamegi.github.io/mind-mirror-landing-page/"
+    />
+    <meta property="og:title" content="Mind Mirror — AI 감정 일기 앱" />
+    <meta
+      property="og:description"
+      content="Gemini AI가 매일의 일기를 분석하여 감정 패턴을 발견하고 마음 건강을 위한 인사이트를 제공하는 스마트 일기 앱"
+    />
+    <meta
+      property="og:image"
+      content="https://guamegi.github.io/mind-mirror-landing-page/images/og-image.png"
+    />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mind Mirror — AI 감정 일기 앱" />
+    <meta
+      name="twitter:description"
+      content="Gemini AI가 감정을 분석하고 마음 건강 인사이트를 제공하는 일기 앱"
+    />
+    <meta
+      name="twitter:image"
+      content="https://guamegi.github.io/mind-mirror-landing-page/images/og-image.png"
+    />
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="ko" href="?lang=ko" />
+    <link rel="alternate" hreflang="en" href="?lang=en" />
+    <link rel="alternate" hreflang="ja" href="?lang=ja" />
+    <link rel="alternate" hreflang="zh" href="?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="?lang=ko" />
+
+    <!-- Canonical (update with your GitHub Pages URL) -->
+    <link
+      rel="canonical"
+      href="https://guamegi.github.io/mind-mirror-landing-page/"
+    />
+
+    <!-- Favicon (add your icon to images/) -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪞</text></svg>"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Mind Mirror",
+        "description": "AI-powered emotion diary app that analyzes your daily entries with Google Gemini to provide mental wellness insights",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS, Android",
+        "inLanguage": ["ko", "en", "ja", "zh"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Mind Mirror"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ── NAVBAR ── -->
+    <nav
+      class="navbar"
+      id="navbar"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <div class="nav-container">
+        <a href="#" class="nav-logo" aria-label="Mind Mirror home">
+          <span class="logo-icon" aria-hidden="true">🪞</span>
+          <span class="logo-text">Mind Mirror</span>
+        </a>
+
+        <!-- Desktop links -->
+        <div class="nav-links" id="navLinks" role="menubar">
+          <a href="#features" role="menuitem" data-i18n="nav.features">기능</a>
+          <a href="#how-it-works" role="menuitem" data-i18n="nav.howItWorks"
+            >사용법</a
+          >
+          <a href="#download" role="menuitem" data-i18n="nav.download"
+            >다운로드</a
+          >
+        </div>
+
+        <div class="nav-right">
+          <!-- Language switcher -->
+          <div
+            class="lang-switcher"
+            role="group"
+            aria-label="Language selector"
+          >
+            <button class="lang-btn" data-lang="ko" aria-label="한국어">
+              한국어
+            </button>
+            <button class="lang-btn" data-lang="en" aria-label="English">
+              EN
+            </button>
+            <button class="lang-btn" data-lang="ja" aria-label="日本語">
+              日本語
+            </button>
+            <button class="lang-btn" data-lang="zh" aria-label="中文">
+              中文
+            </button>
+          </div>
+
+          <!-- Theme toggle -->
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+          </button>
+
+          <!-- Mobile hamburger -->
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+      </div>
+
+      <div class="hero-container">
+        <!-- Left: copy -->
+        <div class="hero-content">
+          <div class="hero-badge" data-i18n="hero.badge">✨ Gemini AI 탑재</div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero.title1">당신의 감정을</span><br />
+            <span class="gradient-text" data-i18n="hero.title2"
+              >AI로 이해하다</span
+            >
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            매일의 일기를 쓰면 Gemini AI가 감정을 분석하고, 마음의 패턴을
+            발견하며, 더 나은 내일을 위한 인사이트를 제공합니다.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn-primary" data-i18n="hero.cta"
+              >지금 시작하기</a
+            >
+            <a href="#features" class="btn-secondary" data-i18n="hero.learnMore"
+              >더 알아보기</a
+            >
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num" data-i18n="hero.stat1.num">5가지</span>
+              <span class="stat-label" data-i18n="hero.stat1.label"
+                >감정 카테고리</span
+              >
+            </div>
+            <div class="stat-div" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num" data-i18n="hero.stat2.num">4개</span>
+              <span class="stat-label" data-i18n="hero.stat2.label"
+                >지원 언어</span
+              >
+            </div>
+            <div class="stat-div" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num" data-i18n="hero.stat3.num">AI</span>
+              <span class="stat-label" data-i18n="hero.stat3.label"
+                >Gemini 2.5</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: phone mockup -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="app-header">
+                <span class="app-date">2026. 04. 27</span>
+                <span class="app-icons">🔔 👤</span>
+              </div>
+
+              <!-- Mood card -->
+              <div class="mood-card-wrap">
+                <div class="mood-card-inner">
+                  <span class="mood-card-emoji">😊</span>
+                  <div>
+                    <div class="mood-card-label" data-i18n="app.week">
+                      이번 주 기분
+                    </div>
+                    <div class="mood-card-val" data-i18n="app.emotion">
+                      기쁨
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Diary item -->
+              <div class="diary-item-mini">
+                <div class="di-row">
+                  <div class="di-dot"></div>
+                  <span class="di-title" data-i18n="app.diary"
+                    >오늘의 일기</span
+                  >
+                </div>
+                <span class="di-preview" data-i18n="app.preview"
+                  >AI가 감정을 분석 중...</span
+                >
+                <div class="di-tags">
+                  <span class="di-tag">#성장</span>
+                  <span class="di-tag">#희망</span>
+                </div>
+              </div>
+
+              <!-- AI bar -->
+              <div class="ai-bar">
+                <span class="ai-sparkle">✨</span>
+                <div>
+                  <div class="ai-bar-label" data-i18n="app.ai">AI 분석</div>
+                  <div class="ai-bar-prev" data-i18n="app.aiprev">
+                    당신의 감정 패턴...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="floating-card card-1">
+            <span class="fc-emoji">🧠</span>
+            <span data-i18n="float.analysis">감정 분석 완료</span>
+          </div>
+          <div class="floating-card card-2">
+            <span class="fc-emoji">📈</span>
+            <span data-i18n="float.trend">긍정 트렌드 ↑</span>
+          </div>
+          <div class="floating-card card-3">
+            <span class="fc-emoji">🔒</span>
+            <span data-i18n="float.privacy">안전하게 잠금</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURES ── -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge" data-i18n="features.badge">주요 기능</div>
+          <h2
+            class="section-title"
+            id="features-heading"
+            data-i18n="features.title"
+          >
+            마음을 이해하는 기능들
+          </h2>
+          <p class="section-subtitle" data-i18n="features.subtitle">
+            Mind Mirror는 당신의 내면을 더 깊이 이해할 수 있도록 도와줍니다
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- AI Analysis — featured (wide) -->
+          <article class="feature-card featured animate-on-scroll delay-1">
+            <div class="feature-icon" aria-hidden="true">🤖</div>
+            <h3 data-i18n="feat1.title">AI 감정 분석</h3>
+            <p data-i18n="feat1.desc">
+              Google Gemini 2.5 Flash가 일기를 분석하여 감정 요약, 주요 감정,
+              심리 분석, 맞춤 조언을 제공합니다.
+            </p>
+            <div class="feature-tags">
+              <span data-i18n="feat1.tag1">Gemini AI</span>
+              <span data-i18n="feat1.tag2">감정 인식</span>
+              <span data-i18n="feat1.tag3">맞춤 조언</span>
+            </div>
+          </article>
+
+          <!-- Visualization -->
+          <article class="feature-card animate-on-scroll delay-2">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3 data-i18n="feat2.title">감정 시각화</h3>
+            <p data-i18n="feat2.desc">
+              주간 감정 변화를 레이더 차트와 감정 바로 한눈에 확인하세요.
+            </p>
+          </article>
+
+          <!-- Privacy -->
+          <article class="feature-card animate-on-scroll delay-3">
+            <div class="feature-icon" aria-hidden="true">🔒</div>
+            <h3 data-i18n="feat3.title">프라이버시 보호</h3>
+            <p data-i18n="feat3.desc">
+              생체인증(Face ID, Touch ID)과 PIN으로 일기를 안전하게 잠급니다.
+            </p>
+          </article>
+
+          <!-- Dark Mode -->
+          <article class="feature-card animate-on-scroll delay-4">
+            <div class="feature-icon" aria-hidden="true">🌙</div>
+            <h3 data-i18n="feat4.title">다크 모드</h3>
+            <p data-i18n="feat4.desc">
+              눈이 편안한 다크 모드와 폰트 크기 조절로 나만의 환경을 설정하세요.
+            </p>
+          </article>
+
+          <!-- Multilang -->
+          <article class="feature-card animate-on-scroll delay-5">
+            <div class="feature-icon" aria-hidden="true">🌍</div>
+            <h3 data-i18n="feat5.title">4개 언어 지원</h3>
+            <p data-i18n="feat5.desc">
+              한국어, 영어, 일본어, 중국어로 이용 가능한 글로벌 앱입니다.
+            </p>
+          </article>
+
+          <!-- Photo -->
+          <article class="feature-card animate-on-scroll delay-6">
+            <div class="feature-icon" aria-hidden="true">📸</div>
+            <h3 data-i18n="feat6.title">사진 첨부</h3>
+            <p data-i18n="feat6.desc">
+              소중한 순간의 사진과 함께 일기를 더욱 풍부하게 기록하세요.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EMOTIONS ── -->
+    <section class="emotions-section" aria-labelledby="emotions-heading">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge" data-i18n="emotions.badge">
+            감정 카테고리
+          </div>
+          <h2
+            class="section-title"
+            id="emotions-heading"
+            data-i18n="emotions.title"
+          >
+            5가지 감정 카테고리
+          </h2>
+          <p class="section-subtitle" data-i18n="emotions.subtitle">
+            AI가 일기에서 주요 감정을 자동으로 파악합니다
+          </p>
+        </div>
+
+        <div class="emotions-grid">
+          <div class="emotion-card joy animate-on-scroll delay-1">
+            <span class="emotion-emoji" role="img" aria-label="Joy">😊</span>
+            <span class="emotion-name" data-i18n="emo.joy">기쁨</span>
+          </div>
+          <div class="emotion-card neutral animate-on-scroll delay-2">
+            <span class="emotion-emoji" role="img" aria-label="Neutral"
+              >😐</span
+            >
+            <span class="emotion-name" data-i18n="emo.neutral">평온</span>
+          </div>
+          <div class="emotion-card sad animate-on-scroll delay-3">
+            <span class="emotion-emoji" role="img" aria-label="Sad">😢</span>
+            <span class="emotion-name" data-i18n="emo.sad">슬픔</span>
+          </div>
+          <div class="emotion-card anxious animate-on-scroll delay-4">
+            <span class="emotion-emoji" role="img" aria-label="Anxious"
+              >😰</span
+            >
+            <span class="emotion-name" data-i18n="emo.anxious">불안</span>
+          </div>
+          <div class="emotion-card angry animate-on-scroll delay-5">
+            <span class="emotion-emoji" role="img" aria-label="Angry">😤</span>
+            <span class="emotion-name" data-i18n="emo.angry">화남</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
+    <section
+      class="how-it-works"
+      id="how-it-works"
+      aria-labelledby="how-heading"
+    >
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge" data-i18n="how.badge">사용법</div>
+          <h2 class="section-title" id="how-heading" data-i18n="how.title">
+            3단계로 시작하세요
+          </h2>
+          <p class="section-subtitle" data-i18n="how.subtitle">
+            간단한 3단계로 마음의 거울을 만나보세요
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step animate-on-scroll delay-1">
+            <div class="step-num">01</div>
+            <span class="step-visual" aria-hidden="true">✍️</span>
+            <h3 data-i18n="step1.title">일기 작성</h3>
+            <p data-i18n="step1.desc">
+              오늘 하루를 자유롭게 기록하세요. 텍스트와 사진으로 소중한 순간을
+              담을 수 있습니다.
+            </p>
+          </article>
+
+          <div class="step-arrow animate-on-scroll delay-2" aria-hidden="true">
+            →
+          </div>
+
+          <article class="step animate-on-scroll delay-3">
+            <div class="step-num">02</div>
+            <span class="step-visual" aria-hidden="true">🤖</span>
+            <h3 data-i18n="step2.title">AI 분석</h3>
+            <p data-i18n="step2.desc">
+              Gemini AI가 일기를 분석하여 감정 요약, 심층 분석, 맞춤 조언을
+              자동으로 생성합니다.
+            </p>
+          </article>
+
+          <div class="step-arrow animate-on-scroll delay-4" aria-hidden="true">
+            →
+          </div>
+
+          <article class="step animate-on-scroll delay-5">
+            <div class="step-num">03</div>
+            <span class="step-visual" aria-hidden="true">💡</span>
+            <h3 data-i18n="step3.title">인사이트 확인</h3>
+            <p data-i18n="step3.desc">
+              주간 감정 트렌드, 심리 게이지, 키워드 패턴으로 자신을 더 깊이
+              이해하세요.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DOWNLOAD ── -->
+    <section class="download" id="download" aria-labelledby="dl-heading">
+      <div class="dl-bg" aria-hidden="true"><div class="orb-4"></div></div>
+      <div class="section-container">
+        <div class="download-inner animate-on-scroll">
+          <h2 class="download-title" id="dl-heading" data-i18n="dl.title">
+            지금 바로 시작하세요
+          </h2>
+          <p class="download-subtitle" data-i18n="dl.subtitle">
+            iOS와 Android에서 무료로 이용하실 수 있습니다
+          </p>
+
+          <div class="store-buttons">
+            <!-- App Store -->
+            <a
+              href="https://apps.apple.com/app/mind-mirror/id6759994294"
+              class="store-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download on the App Store"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="28"
+                height="28"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.06.04c-.22.14-2.19 1.28-2.17 3.83.03 3.02 2.65 4.03 2.68 4.04l-.09.27z"
+                />
+                <path
+                  d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                />
+              </svg>
+              <div class="store-text">
+                <span class="store-label" data-i18n="dl.as.label"
+                  >Download on the</span
+                >
+                <span class="store-name">App Store</span>
+              </div>
+            </a>
+
+            <!-- Google Play -->
+            <a href="https://play.google.com/store/apps/details?id=com.mindmirror.mind_mirror" class="store-btn" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="28"
+                height="28"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3.18 23.76c.37.21.8.26 1.24.14l12.44-7.18-2.82-2.82L3.18 23.76zm-1.63-20L13.42 12 1.55.24C1.21.4.99.75.99 1.18v21.64c0 .43.22.78.56.94zM20.44 10.45l-2.6-1.5L14.66 12l3.18 3.18 2.62-1.51c.74-.43.74-1.79-.02-2.22zM4.42.1L16.86 7.28 14.04 10.1 4.42.1z"
+                />
+              </svg>
+              <div class="store-text">
+                <span class="store-label" data-i18n="dl.gp.label"
+                  >Get it on</span
+                >
+                <span class="store-name">Google Play</span>
+              </div>
+            </a>
+          </div>
+
+          <p class="dl-note" data-i18n="dl.note">
+            현재 출시 준비 중입니다. 이메일을 등록하면 출시 알림을 보내드립니다.
+          </p>
+
+          <form class="notify-form" id="notifyForm" novalidate>
+            <input
+              type="email"
+              class="notify-input"
+              id="notifyEmail"
+              data-i18n-ph="dl.placeholder"
+              placeholder="your@email.com"
+              autocomplete="email"
+              aria-label="Email address"
+            />
+            <button type="submit" class="notify-btn" data-i18n="dl.notify">
+              알림 받기
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo" aria-label="Mind Mirror">
+              <span class="logo-icon" aria-hidden="true">🪞</span>
+              <span class="logo-text">Mind Mirror</span>
+            </a>
+            <p class="footer-tagline" data-i18n="footer.tagline">
+              AI가 함께하는 감정 일기
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Footer navigation">
+            <div class="footer-col">
+              <h4 data-i18n="footer.product">제품</h4>
+              <a href="#features" data-i18n="nav.features">기능</a>
+              <a href="#how-it-works" data-i18n="nav.howItWorks">사용법</a>
+              <a href="#download" data-i18n="nav.download">다운로드</a>
+            </div>
+            <div class="footer-col">
+              <h4 data-i18n="footer.legal">법적 고지</h4>
+              <a href="#" data-i18n="footer.privacy">개인정보처리방침</a>
+              <a href="#" data-i18n="footer.terms">이용약관</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy" data-i18n="footer.copy">
+            © 2026 Mind Mirror. All rights reserved.
+          </p>
+          <div class="footer-langs" role="group" aria-label="Language selector">
+            <button data-lang="ko">한국어</button>
+            <button data-lang="en">English</button>
+            <button data-lang="ja">日本語</button>
+            <button data-lang="zh">中文</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
