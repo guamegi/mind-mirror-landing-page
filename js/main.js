@@ -14,16 +14,39 @@ function detectLang() {
   return DEFAULT_LANG;
 }
 
+const OG_LOCALE_MAP = { ko: 'ko_KR', en: 'en_US', ja: 'ja_JP', zh: 'zh_CN' };
+
+function setMeta(selector, attr, value) {
+  const el = document.querySelector(selector);
+  if (el) el.setAttribute(attr, value);
+}
+
 function applyLang(lang) {
   if (!translations[lang]) return;
   const t = translations[lang];
   localStorage.setItem('mm_lang', lang);
 
+  /* ── HTML lang attribute ── */
   document.documentElement.lang = t['html.lang'];
-  document.title = t['meta.title'];
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) metaDesc.setAttribute('content', t['meta.description']);
 
+  /* ── <title> ── */
+  document.title = t['meta.title'];
+
+  /* ── Standard meta ── */
+  setMeta('meta[name="description"]',  'content', t['meta.description']);
+
+  /* ── Open Graph ── */
+  setMeta('meta[property="og:title"]',       'content', t['meta.title']);
+  setMeta('meta[property="og:description"]', 'content', t['meta.description']);
+  setMeta('meta[property="og:locale"]',      'content', OG_LOCALE_MAP[lang] || 'en_US');
+  setMeta('meta[property="og:url"]',         'content',
+    `https://guamegi.github.io/mind-mirror-landing-page/?lang=${lang}`);
+
+  /* ── Twitter Card ── */
+  setMeta('meta[name="twitter:title"]',       'content', t['meta.title']);
+  setMeta('meta[name="twitter:description"]', 'content', t['meta.description']);
+
+  /* ── data-i18n elements ── */
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) el.textContent = t[key];
@@ -33,10 +56,12 @@ function applyLang(lang) {
     if (t[key] !== undefined) el.placeholder = t[key];
   });
 
+  /* ── Language switcher active state ── */
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
+  /* ── URL sync ── */
   const url = new URL(location.href);
   url.searchParams.set('lang', lang);
   history.replaceState({}, '', url);
