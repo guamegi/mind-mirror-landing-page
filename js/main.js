@@ -61,6 +61,14 @@ function applyLang(lang) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
+  /* ── Mobile dropdown sync ── */
+  const LANG_LABELS = { ko: '한국어', en: 'EN', ja: '日本語', zh: '中文' };
+  const dropdownLabel = document.getElementById('langDropdownLabel');
+  if (dropdownLabel) dropdownLabel.textContent = LANG_LABELS[lang] || lang;
+  document.querySelectorAll('.lang-dropdown-item').forEach(item => {
+    item.classList.toggle('active', item.dataset.lang === lang);
+  });
+
   /* ── URL sync ── */
   const url = new URL(location.href);
   url.searchParams.set('lang', lang);
@@ -173,6 +181,33 @@ function initParallax() {
   });
 }
 
+/* ── Mobile lang dropdown ── */
+function initLangDropdown() {
+  const dropdown = document.getElementById('langDropdown');
+  const trigger = document.getElementById('langDropdownTrigger');
+  const menu = document.getElementById('langDropdownMenu');
+  if (!dropdown || !trigger || !menu) return;
+
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = dropdown.classList.toggle('open');
+    trigger.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  menu.querySelectorAll('.lang-dropdown-item').forEach(item => {
+    item.addEventListener('click', () => {
+      applyLang(item.dataset.lang);
+      dropdown.classList.remove('open');
+      trigger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.addEventListener('click', () => {
+    dropdown.classList.remove('open');
+    trigger.setAttribute('aria-expanded', 'false');
+  });
+}
+
 /* ── Init ── */
 document.addEventListener('DOMContentLoaded', () => {
   const lang = detectLang();
@@ -185,6 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => applyLang(btn.dataset.lang));
   });
+
+  initLangDropdown();
 
   const themeToggle = document.getElementById('themeToggle');
   if (themeToggle) themeToggle.addEventListener('click', toggleTheme);

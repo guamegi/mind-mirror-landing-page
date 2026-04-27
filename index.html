@@ -132,7 +132,7 @@
         </div>
 
         <div class="nav-right">
-          <!-- Language switcher -->
+          <!-- Language switcher (desktop pills) -->
           <div
             class="lang-switcher"
             role="group"
@@ -150,6 +150,22 @@
             <button class="lang-btn" data-lang="zh" aria-label="中文">
               中文
             </button>
+          </div>
+
+          <!-- Language switcher (mobile dropdown) -->
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-dropdown-trigger" id="langDropdownTrigger" aria-haspopup="listbox" aria-expanded="false">
+              <span id="langDropdownLabel">한국어</span>
+              <svg class="lang-dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="lang-dropdown-menu" id="langDropdownMenu" role="listbox" aria-label="Language selector">
+              <li class="lang-dropdown-item" data-lang="ko" role="option">한국어</li>
+              <li class="lang-dropdown-item" data-lang="en" role="option">EN</li>
+              <li class="lang-dropdown-item" data-lang="ja" role="option">日本語</li>
+              <li class="lang-dropdown-item" data-lang="zh" role="option">中文</li>
+            </ul>
           </div>
 
           <!-- Theme toggle -->
@@ -631,8 +647,8 @@
             </div>
             <div class="footer-col">
               <h4 data-i18n="footer.legal">법적 고지</h4>
-              <a href="#" data-i18n="footer.privacy">개인정보처리방침</a>
-              <a href="#" data-i18n="footer.terms">이용약관</a>
+              <a href="https://cheddar-toy-4e8.notion.site/Privacy-Policy-Terms-for-Mind-Mirror-318e20a8500380a5a849d161145621b6" target="_blank" rel="noopener noreferrer" data-i18n="footer.privacy">개인정보처리방침</a>
+              <a href="https://cheddar-toy-4e8.notion.site/Privacy-Policy-Terms-for-Mind-Mirror-318e20a8500380a5a849d161145621b6" target="_blank" rel="noopener noreferrer" data-i18n="footer.terms">이용약관</a>
             </div>
           </nav>
         </div>
@@ -641,12 +657,6 @@
           <p class="footer-copy" data-i18n="footer.copy">
             © 2026 Mind Mirror. All rights reserved.
           </p>
-          <div class="footer-langs" role="group" aria-label="Language selector">
-            <button data-lang="ko">한국어</button>
-            <button data-lang="en">English</button>
-            <button data-lang="ja">日本語</button>
-            <button data-lang="zh">中文</button>
-          </div>
         </div>
       </div>
     </footer>
