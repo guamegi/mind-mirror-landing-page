@@ -422,31 +422,31 @@
 
         <div class="emotions-grid">
           <div class="emotion-card joy animate-on-scroll delay-1">
-            <span class="emotion-emoji" role="img" aria-label="Joy">😊</span>
+            <img class="emotion-img" src="images/joy.png" alt="Joy">
             <span class="emotion-name" data-i18n="emo.joy">기쁨</span>
           </div>
           <div class="emotion-card excitement animate-on-scroll delay-2">
-            <span class="emotion-emoji" role="img" aria-label="Excited">🥰</span>
+            <img class="emotion-img" src="images/excited.png" alt="Excited">
             <span class="emotion-name" data-i18n="emo.excitement">설렘</span>
           </div>
           <div class="emotion-card proud animate-on-scroll delay-3">
-            <span class="emotion-emoji" role="img" aria-label="Proud">🥹</span>
+            <img class="emotion-img" src="images/proud.png" alt="Proud">
             <span class="emotion-name" data-i18n="emo.proud">뿌듯</span>
           </div>
           <div class="emotion-card sad animate-on-scroll delay-4">
-            <span class="emotion-emoji" role="img" aria-label="Sad">😢</span>
+            <img class="emotion-img" src="images/sad.png" alt="Sad">
             <span class="emotion-name" data-i18n="emo.sad">슬픔</span>
           </div>
           <div class="emotion-card neutral animate-on-scroll delay-5">
-            <span class="emotion-emoji" role="img" aria-label="Neutral">😐</span>
+            <img class="emotion-img" src="images/calm.png" alt="Neutral">
             <span class="emotion-name" data-i18n="emo.neutral">평온</span>
           </div>
           <div class="emotion-card angry animate-on-scroll delay-6">
-            <span class="emotion-emoji" role="img" aria-label="Angry">😤</span>
+            <img class="emotion-img" src="images/angry.png" alt="Angry">
             <span class="emotion-name" data-i18n="emo.angry">화남</span>
           </div>
           <div class="emotion-card tired animate-on-scroll delay-6">
-            <span class="emotion-emoji" role="img" aria-label="Tired">😪</span>
+            <img class="emotion-img" src="images/tired.png" alt="Tired">
             <span class="emotion-name" data-i18n="emo.tired">피곤</span>
           </div>
         </div>
@@ -492,6 +492,178 @@
             <h3 data-i18n="aifeat.fortune.title">오늘의 운세</h3>
             <p data-i18n="aifeat.fortune.desc">일기와 감정 데이터를 바탕으로 AI가 오늘의 운세와 맞춤 조언을 알려드립니다.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CHAT DIARY SPOTLIGHT ── -->
+    <section class="feature-spotlight chat-spotlight" id="chat-feature" aria-labelledby="chat-spot-heading">
+      <div class="section-container">
+        <div class="spot-inner">
+          <div class="spot-content animate-on-scroll delay-1">
+            <div class="section-badge" data-i18n="chat.badge">AI 대화 일기</div>
+            <h2 class="spot-title" id="chat-spot-heading">
+              <span data-i18n="chat.title1">AI와 대화하며</span><br>
+              <span data-i18n="chat.title2">일기를 완성하세요</span>
+            </h2>
+            <p class="spot-desc" data-i18n="chat.desc">빈 화면이 막막할 때, AI가 먼저 말을 걸어드려요. 자연스러운 대화를 나누다 보면 어느새 나만의 일기가 완성됩니다.</p>
+            <ul class="spot-list">
+              <li><span class="spot-check">✓</span><span data-i18n="chat.li1">AI가 먼저 질문하며 이야기 이끌기</span></li>
+              <li><span class="spot-check">✓</span><span data-i18n="chat.li2">대화 내용을 일기로 자동 변환</span></li>
+              <li><span class="spot-check">✓</span><span data-i18n="chat.li3">완성된 일기는 자유롭게 수정 가능</span></li>
+            </ul>
+          </div>
+          <div class="spot-visual animate-on-scroll delay-2" aria-hidden="true">
+            <div class="chat-mockup">
+              <div class="chat-mockup-header">
+                <span class="chat-mockup-icon">💬</span>
+                <span data-i18n="chat.header">AI 대화 일기</span>
+              </div>
+              <div class="chat-mockup-body">
+                <div class="chat-row ai-row">
+                  <span class="chat-ava">🤖</span>
+                  <span class="chat-bub chat-bub-ai" data-i18n="chat.q1">오늘 하루 어땠어요? 😊</span>
+                </div>
+                <div class="chat-row user-row">
+                  <span class="chat-bub chat-bub-user" data-i18n="chat.a1">잘 지냈어요! 오늘 날씨가 너무 좋았어요</span>
+                </div>
+                <div class="chat-row ai-row">
+                  <span class="chat-ava">🤖</span>
+                  <span class="chat-bub chat-bub-ai" data-i18n="chat.q2">특별히 기억에 남는 순간이 있었나요?</span>
+                </div>
+                <div class="chat-row user-row">
+                  <span class="chat-bub chat-bub-user" data-i18n="chat.a2">친구랑 카페에서 수다 떨었어요 ☕</span>
+                </div>
+              </div>
+              <div class="chat-mockup-footer">
+                <span class="chat-gen">✨ <span data-i18n="chat.gen">일기 생성 중...</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PHOTO DIARY SPOTLIGHT ── -->
+    <section class="feature-spotlight" id="photo-feature" aria-labelledby="photo-spot-heading">
+      <div class="section-container">
+        <div class="spot-inner photo-spot-inner">
+          <div class="spot-visual animate-on-scroll delay-1" aria-hidden="true">
+            <div class="photo-flow-wrap">
+              <div class="pf-photo-box">
+                <span class="pf-camera">📷</span>
+                <span class="pf-hint" data-i18n="photo.hint">사진 첨부</span>
+              </div>
+              <div class="pf-arrow">
+                <span class="pf-ai-badge">✨ AI</span>
+                <span class="pf-arr-icon">→</span>
+              </div>
+              <div class="pf-diary-box">
+                <div class="pf-diary-header">
+                  <span class="pf-diary-dot"></span>
+                  <span class="pf-diary-date">2026. 04. 27</span>
+                  <span class="pf-diary-tag" data-i18n="emo.joy">기쁨</span>
+                </div>
+                <div class="pf-diary-title" data-i18n="app.diary">오늘의 일기</div>
+                <div class="pf-diary-lines">
+                  <span class="pf-dl pf-dl-full"></span>
+                  <span class="pf-dl pf-dl-4-5"></span>
+                  <span class="pf-dl pf-dl-3-5"></span>
+                </div>
+                <div class="pf-done">
+                  <span>✨</span>
+                  <span data-i18n="photo.done">AI 일기 생성 완료</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spot-content animate-on-scroll delay-2">
+            <div class="section-badge" data-i18n="photo.badge">사진 기반 일기</div>
+            <h2 class="spot-title" id="photo-spot-heading">
+              <span data-i18n="photo.title1">사진 한 장으로</span><br>
+              <span data-i18n="photo.title2">시작하는 일기</span>
+            </h2>
+            <p class="spot-desc" data-i18n="photo.desc">글쓰기가 어렵거나 바쁜 날도 괜찮아요. 사진을 첨부하면 AI가 장면을 분석해 감정과 분위기까지 담은 일기를 자동으로 완성해드립니다.</p>
+            <ul class="spot-list">
+              <li><span class="spot-check">✓</span><span data-i18n="photo.li1">사진 1장으로 일기 자동 완성</span></li>
+              <li><span class="spot-check">✓</span><span data-i18n="photo.li2">AI가 감정과 분위기까지 파악</span></li>
+              <li><span class="spot-check">✓</span><span data-i18n="photo.li3">원하는 대로 직접 편집 가능</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RELATIONSHIP INDEX SPOTLIGHT ── -->
+    <section class="feature-spotlight relation-spotlight" id="relation-feature" aria-labelledby="relation-spot-heading">
+      <div class="section-container">
+        <div class="spot-inner">
+          <div class="spot-content animate-on-scroll delay-1">
+            <div class="section-badge" data-i18n="relation.badge">관계지수 시각화</div>
+            <h2 class="spot-title" id="relation-spot-heading">
+              <span data-i18n="relation.title1">일기 속 인물 관계를</span><br>
+              <span data-i18n="relation.title2">한눈에 파악하세요</span>
+            </h2>
+            <p class="spot-desc" data-i18n="relation.desc">AI가 일기에 등장하는 인물들을 파악하고 관계 패턴, 감정적 친밀도, 상호작용 빈도를 분석해 시각적 지수로 보여줍니다.</p>
+            <ul class="spot-list">
+              <li><span class="spot-check">✓</span><span data-i18n="relation.li1">인물별 관계지수 자동 산출</span></li>
+              <li><span class="spot-check">✓</span><span data-i18n="relation.li2">감정적 친밀도 변화 추이</span></li>
+              <li><span class="spot-check">✓</span><span data-i18n="relation.li3">관계 패턴 시각화 차트</span></li>
+            </ul>
+          </div>
+          <div class="spot-visual animate-on-scroll delay-2" aria-hidden="true">
+            <div class="relation-card">
+              <div class="rc-header">
+                <span class="rc-title" data-i18n="relation.card.title">관계 지수</span>
+                <span>💝</span>
+              </div>
+              <div class="rc-list">
+                <div class="rc-item">
+                  <div class="rc-person">
+                    <span class="rc-avatar rc-av-pink">💕</span>
+                    <span class="rc-name" data-i18n="relation.p1">연인</span>
+                  </div>
+                  <div class="rc-bar-wrap">
+                    <div class="rc-bar rc-bar-pink" style="--bar-w:98%"></div>
+                  </div>
+                  <span class="rc-score">98</span>
+                </div>
+                <div class="rc-item">
+                  <div class="rc-person">
+                    <span class="rc-avatar rc-av-purple">👫</span>
+                    <span class="rc-name" data-i18n="relation.p2">친구</span>
+                  </div>
+                  <div class="rc-bar-wrap">
+                    <div class="rc-bar rc-bar-purple" style="--bar-w:92%"></div>
+                  </div>
+                  <span class="rc-score">92</span>
+                </div>
+                <div class="rc-item">
+                  <div class="rc-person">
+                    <span class="rc-avatar rc-av-teal">👨‍👩‍👦</span>
+                    <span class="rc-name" data-i18n="relation.p3">가족</span>
+                  </div>
+                  <div class="rc-bar-wrap">
+                    <div class="rc-bar rc-bar-teal" style="--bar-w:87%"></div>
+                  </div>
+                  <span class="rc-score">87</span>
+                </div>
+                <div class="rc-item">
+                  <div class="rc-person">
+                    <span class="rc-avatar rc-av-yellow">💼</span>
+                    <span class="rc-name" data-i18n="relation.p4">동료</span>
+                  </div>
+                  <div class="rc-bar-wrap">
+                    <div class="rc-bar rc-bar-yellow" style="--bar-w:65%"></div>
+                  </div>
+                  <span class="rc-score">65</span>
+                </div>
+              </div>
+              <div class="rc-footer">
+                <span class="rc-ai-tag">✨ AI 분석 기반</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
