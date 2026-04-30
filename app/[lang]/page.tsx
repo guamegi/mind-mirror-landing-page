@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { translations, LANG_LABELS, type Lang } from '@/lib/i18n'
 import ClientSideInit from '@/components/ClientSideInit'
 
@@ -205,31 +206,31 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
           </div>
           <div className="emotions-grid">
             <div className="emotion-card joy animate-on-scroll delay-1">
-              <img className="emotion-img" src="/images/joy.png" alt="Joy" />
+              <Image className="emotion-img" src="/images/joy.png" alt="Joy" width={80} height={80} />
               <span className="emotion-name">{t['emo.joy']}</span>
             </div>
             <div className="emotion-card excitement animate-on-scroll delay-2">
-              <img className="emotion-img" src="/images/excited.png" alt="Excited" />
+              <Image className="emotion-img" src="/images/excited.png" alt="Excited" width={80} height={80} />
               <span className="emotion-name">{t['emo.excitement']}</span>
             </div>
             <div className="emotion-card proud animate-on-scroll delay-3">
-              <img className="emotion-img" src="/images/proud.png" alt="Proud" />
+              <Image className="emotion-img" src="/images/proud.png" alt="Proud" width={80} height={80} />
               <span className="emotion-name">{t['emo.proud']}</span>
             </div>
             <div className="emotion-card sad animate-on-scroll delay-4">
-              <img className="emotion-img" src="/images/sad.png" alt="Sad" />
+              <Image className="emotion-img" src="/images/sad.png" alt="Sad" width={80} height={80} />
               <span className="emotion-name">{t['emo.sad']}</span>
             </div>
             <div className="emotion-card neutral animate-on-scroll delay-5">
-              <img className="emotion-img" src="/images/calm.png" alt="Neutral" />
+              <Image className="emotion-img" src="/images/calm.png" alt="Neutral" width={80} height={80} />
               <span className="emotion-name">{t['emo.neutral']}</span>
             </div>
             <div className="emotion-card angry animate-on-scroll delay-6">
-              <img className="emotion-img" src="/images/angry.png" alt="Angry" />
+              <Image className="emotion-img" src="/images/angry.png" alt="Angry" width={80} height={80} />
               <span className="emotion-name">{t['emo.angry']}</span>
             </div>
             <div className="emotion-card tired animate-on-scroll delay-6">
-              <img className="emotion-img" src="/images/tired.png" alt="Tired" />
+              <Image className="emotion-img" src="/images/tired.png" alt="Tired" width={80} height={80} />
               <span className="emotion-name">{t['emo.tired']}</span>
             </div>
           </div>
