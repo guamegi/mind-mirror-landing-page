@@ -1,103 +1,111 @@
-# Mind Mirror — Landing Page
+# Mind Mirror - Landing Page
 
-> Official landing page for **Mind Mirror**, an AI-powered emotion diary app for iOS & Android.
+> Official landing page for **Mind Mirror**, an AI-powered emotion diary app for iOS and Android.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-guamegi.github.io-6C63FF?style=flat-square&logo=github)](https://guamegi.github.io/mind-mirror-landing-page/)
 [![App Store](https://img.shields.io/badge/App%20Store-Download-000000?style=flat-square&logo=apple)](https://apps.apple.com/app/mind-mirror/id6759994294)
 [![Google Play](https://img.shields.io/badge/Google%20Play-Download-414141?style=flat-square&logo=google-play)](https://play.google.com/store/apps/details?id=com.mindmirror.mind_mirror)
 
----
-
 ## Overview
 
-This is a **static landing page** built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools. It is designed to be deployed directly to GitHub Pages.
+This project is a **Next.js 15** landing page migrated from a static HTML/CSS/JS implementation.
 
-The page introduces Mind Mirror, which lets users write daily diary entries analyzed by AI to uncover emotion patterns and provide mental wellness insights.
-
----
+It keeps the original single-page marketing experience, while using the **App Router** and **static export** for deployment to GitHub Pages.
 
 ## Features
 
-### Page
-
-- **Multilingual** — Korean, English, Japanese, Chinese; auto-detected from URL param → localStorage → browser language
-- **Dark / Light mode** — respects `prefers-color-scheme`, persisted in localStorage
-- **Fully responsive** — mobile-first, tested down to 375 px
-- **Smooth animations** — scroll-triggered fade-in, floating cards, mouse parallax on phone mockup
-
-### SEO
-
-- Semantic HTML5 with proper heading hierarchy
-- `<meta>` description, keywords, author
-- Open Graph & Twitter Card tags
-- JSON-LD structured data (`MobileApplication` schema)
-- `hreflang` alternate links for all four languages
-- `sitemap.xml` with multilingual `xhtml:link` entries
-- `robots.txt`
-- Emoji SVG favicon (no external dependency)
-
----
-
-## App — Mind Mirror
-
-|               |                                                                                                                |
-| ------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Platform**  | iOS / Android                                                                                                  |
-| **Category**  | Health & Fitness                                                                                               |
-| **Price**     | Free                                                                                                           |
-| **AI**        | Emotion analysis, poem conversion, writing correction, conversational diary, relationship index, daily fortune |
-| **Languages** | Korean · English · Japanese · Chinese                                                                          |
-
-**7 Emotion Categories:** Joy · Excitement · Proud · Sad · Neutral · Angry · Tired
-
----
+- Next.js App Router structure
+- Static export build for GitHub Pages
+- Multilingual landing pages for `en`, `ko`, `ja`, and `zh`
+- Client-side language detection and redirect from `/` to `/{lang}/`
+- Dark / light theme persisted in `localStorage`
+- Responsive layout and scroll-based UI effects
+- SEO metadata, Open Graph, Twitter Card, and JSON-LD structured data
 
 ## Tech Stack
 
-| Layer     | Technology                                                        |
-| --------- | ----------------------------------------------------------------- |
-| Markup    | HTML5 (semantic)                                                  |
-| Styling   | CSS3 — custom properties, grid, flexbox, `prefers-color-scheme`   |
-| Scripting | Vanilla ES6+ JavaScript                                           |
-| Fonts     | [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts |
-| Hosting   | GitHub Pages                                                      |
-
-Zero npm dependencies. Zero build step.
-
----
+| Layer | Technology |
+| --- | --- |
+| Framework | Next.js 15 |
+| UI | React 19 |
+| Language | TypeScript |
+| Styling | Global CSS |
+| Routing | App Router |
+| Deployment | Static export + GitHub Pages |
 
 ## Project Structure
 
-```
+```text
 mind-mirror-landing-page/
-├── index.html          # Main page — all sections, SEO meta, JSON-LD
-├── css/
-│   └── style.css       # All styles (variables, dark mode, responsive)
-├── js/
-│   ├── i18n.js         # Translation strings for ko / en / ja / zh
-│   └── main.js         # Language switching, theme, scroll animations
-├── sitemap.xml         # Multilingual sitemap
-├── robots.txt          # Search engine directives
-└── .nojekyll           # Disables Jekyll processing on GitHub Pages
+├── app/
+│   ├── layout.tsx         # Root layout, global font/theme bootstrapping
+│   ├── page.tsx           # Redirects users to the best language route
+│   ├── globals.css        # Global styles
+│   └── [lang]/
+│       ├── layout.tsx     # Per-language metadata and JSON-LD
+│       └── page.tsx       # Main landing page UI
+├── components/
+│   └── ClientSideInit.tsx # Theme, language switcher, animations, mobile menu
+├── lib/
+│   └── i18n.ts            # Translation strings and locale metadata
+├── public/
+│   └── images/            # Static assets served by Next.js
+├── next.config.js         # Static export and GitHub Pages basePath config
+└── package.json
 ```
-
----
 
 ## Local Development
 
-No installation required. Just open the file:
+Install dependencies and start the Next.js dev server:
 
 ```bash
-# Option 1 — open directly in browser
-open index.html
-
-# Option 2 — serve locally (avoids any file:// quirks)
-npx serve .
-# or
-python3 -m http.server 8080
+npm install
+npm run dev
 ```
 
----
+Then open `http://localhost:3000/mind-mirror-landing-page`.
+
+Because `basePath` is set to `/mind-mirror-landing-page`, local routes are also served under that prefix.
+
+## Build
+
+```bash
+npm run build
+```
+
+This project uses:
+
+- `output: 'export'`
+- `trailingSlash: true`
+- `basePath: '/mind-mirror-landing-page'`
+- `assetPrefix: '/mind-mirror-landing-page'`
+
+The static output is generated for GitHub Pages-compatible deployment.
+
+## Internationalization
+
+Supported languages:
+
+- `en`
+- `ko`
+- `ja`
+- `zh`
+
+Routing behavior:
+
+- `/` detects the preferred language from `localStorage` or browser settings
+- Users are redirected to `/{lang}/`
+- Language changes update `localStorage` and navigate between localized routes
+
+## Deployment Notes
+
+This repository is configured for GitHub Pages-style hosting, not a default Next.js server deployment.
+
+If you change the repository name or deployment path, update these values in [`next.config.js`](/Users/mastermilk/Desktop/web/toy-project/mind-mirror-landing-page/next.config.js):
+
+- `basePath`
+- `assetPrefix`
+- `NEXT_PUBLIC_BASE_PATH`
 
 ## License
 
