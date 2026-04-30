@@ -1,18 +1,19 @@
 'use client'
 import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 const SUPPORTED_LANGS = ['en', 'ko', 'ja', 'zh']
 
 export default function RootPage() {
+  const router = useRouter()
   useEffect(() => {
     const stored = localStorage.getItem('mm_lang')
-    if (stored && SUPPORTED_LANGS.includes(stored)) {
-      window.location.replace(`/${stored}/`)
-      return
-    }
-    const browser = (navigator.language || '').slice(0, 2).toLowerCase()
-    const lang = SUPPORTED_LANGS.includes(browser) ? browser : 'en'
-    window.location.replace(`/${lang}/`)
-  }, [])
+    const lang = stored && SUPPORTED_LANGS.includes(stored)
+      ? stored
+      : SUPPORTED_LANGS.includes((navigator.language || '').slice(0, 2).toLowerCase())
+        ? (navigator.language || '').slice(0, 2).toLowerCase()
+        : 'en'
+    router.replace(`/${lang}/`)
+  }, [router])
   return null
 }
