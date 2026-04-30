@@ -26,11 +26,13 @@ export default function ClientSideInit({ lang }: { lang: string }) {
       })
     }
 
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
     // Language switching - navigate to /{lang}/
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const targetLang = (btn as HTMLElement).dataset.lang
-        if (targetLang) window.location.href = `/${targetLang}/`
+        if (targetLang) window.location.href = `${basePath}/${targetLang}/`
       })
     })
 
@@ -47,7 +49,7 @@ export default function ClientSideInit({ lang }: { lang: string }) {
       dropdownMenu.querySelectorAll('.lang-dropdown-item').forEach(item => {
         item.addEventListener('click', () => {
           const targetLang = (item as HTMLElement).dataset.lang
-          if (targetLang) window.location.href = `/${targetLang}/`
+          if (targetLang) window.location.href = `${basePath}/${targetLang}/`
         })
       })
       document.addEventListener('click', () => {
