@@ -17,7 +17,7 @@ export const LANG_LABELS: Record<Lang, string> = {
   zh: '中文',
 }
 
-export const BASE_URL = 'https://guamegi.github.io/mind-mirror-landing-page'
+export const BASE_URL = 'https://mind-mirror.app'
 
 type TranslationDict = Record<string, string>
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://guamegi.github.io/mind-mirror-landing-page/sitemap.xml
+Sitemap: https://mind-mirror.app/sitemap.xml
