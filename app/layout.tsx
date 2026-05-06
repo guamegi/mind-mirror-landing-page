@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   description: defaultDescription,
   alternates: {
     canonical: '/',
+    languages: {
+      en: `${BASE_URL}/en/`,
+      ko: `${BASE_URL}/ko/`,
+      ja: `${BASE_URL}/ja/`,
+      zh: `${BASE_URL}/zh/`,
+      'x-default': `${BASE_URL}/`,
+    },
   },
   openGraph: {
     type: 'website',
