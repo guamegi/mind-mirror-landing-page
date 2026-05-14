@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       'x-default': `${BASE_URL}/`,
     },
   },
-  robots: 'noindex, follow',
+  robots: 'index, follow',
 }
 
 const redirectScript = `
