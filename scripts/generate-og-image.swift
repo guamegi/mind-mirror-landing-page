@@ -3,7 +3,7 @@ import AppKit
 let fileManager = FileManager.default
 let currentDirectory = fileManager.currentDirectoryPath
 let outputURL = URL(fileURLWithPath: currentDirectory).appendingPathComponent("public/images/og-image.png")
-let joyURL = URL(fileURLWithPath: currentDirectory).appendingPathComponent("public/images/joy.png")
+let joyURL = URL(fileURLWithPath: currentDirectory).appendingPathComponent("public/images/smile_glow.png")
 
 let size = NSSize(width: 1200, height: 630)
 let image = NSImage(size: size)

@@ -207,31 +207,31 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
           </div>
           <div className="emotions-grid">
             <div className="emotion-card joy animate-on-scroll delay-1">
-              <img className="emotion-img" src={`${BASE}/images/joy.png`} alt="Joy" />
+              <img className="emotion-img" src={`${BASE}/images/smile_glow.png`} alt="Joy" />
               <span className="emotion-name">{t['emo.joy']}</span>
             </div>
             <div className="emotion-card excitement animate-on-scroll delay-2">
-              <img className="emotion-img" src={`${BASE}/images/excited.png`} alt="Excited" />
+              <img className="emotion-img" src={`${BASE}/images/tiny_peach.png`} alt="Excited" />
               <span className="emotion-name">{t['emo.excitement']}</span>
             </div>
             <div className="emotion-card proud animate-on-scroll delay-3">
-              <img className="emotion-img" src={`${BASE}/images/proud.png`} alt="Proud" />
+              <img className="emotion-img" src={`${BASE}/images/proud_olive.png`} alt="Proud" />
               <span className="emotion-name">{t['emo.proud']}</span>
             </div>
             <div className="emotion-card sad animate-on-scroll delay-4">
-              <img className="emotion-img" src={`${BASE}/images/sad.png`} alt="Sad" />
+              <img className="emotion-img" src={`${BASE}/images/awkward_teal.png`} alt="Sad" />
               <span className="emotion-name">{t['emo.sad']}</span>
             </div>
             <div className="emotion-card neutral animate-on-scroll delay-5">
-              <img className="emotion-img" src={`${BASE}/images/calm.png`} alt="Neutral" />
+              <img className="emotion-img" src={`${BASE}/images/calm_oat.png`} alt="Neutral" />
               <span className="emotion-name">{t['emo.neutral']}</span>
             </div>
             <div className="emotion-card angry animate-on-scroll delay-6">
-              <img className="emotion-img" src={`${BASE}/images/angry.png`} alt="Angry" />
+              <img className="emotion-img" src={`${BASE}/images/angry_coral.png`} alt="Angry" />
               <span className="emotion-name">{t['emo.angry']}</span>
             </div>
             <div className="emotion-card tired animate-on-scroll delay-6">
-              <img className="emotion-img" src={`${BASE}/images/tired.png`} alt="Tired" />
+              <img className="emotion-img" src={`${BASE}/images/blank_blush.png`} alt="Tired" />
               <span className="emotion-name">{t['emo.tired']}</span>
             </div>
           </div>
