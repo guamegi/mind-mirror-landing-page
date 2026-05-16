@@ -1,11 +1,14 @@
 import { translations, LANG_LABELS, type Lang } from '@/lib/i18n'
 import ClientSideInit from '@/components/ClientSideInit'
+import { resourceCopy } from '@/lib/content'
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export default async function LangPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  const t = translations[lang as Lang]
+  const locale = lang as Lang
+  const t = translations[locale]
+  const resources = resourceCopy[locale]
   const langs: Lang[] = ['ko', 'en', 'ja', 'zh']
 
   return (
@@ -20,6 +23,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
           <div className="nav-links" id="navLinks" role="menubar">
             <a href="#features" role="menuitem">{t['nav.features']}</a>
             <a href="#how-it-works" role="menuitem">{t['nav.howItWorks']}</a>
+            <a href={`/${locale}/guides/`} role="menuitem">{resources.navLabel}</a>
             <a href="#download" role="menuitem">{t['nav.download']}</a>
           </div>
           <div className="nav-right">
@@ -193,6 +197,31 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
               <h3>{t['feat6.title']}</h3>
               <p>{t['feat6.desc']}</p>
             </article>
+            <article className="feature-card animate-on-scroll delay-1">
+              <div className="feature-icon" aria-hidden="true">💬</div>
+              <h3>{t['feat7.title']}</h3>
+              <p>{t['feat7.desc']}</p>
+            </article>
+            <article className="feature-card animate-on-scroll delay-2">
+              <div className="feature-icon" aria-hidden="true">📝</div>
+              <h3>{t['feat8.title']}</h3>
+              <p>{t['feat8.desc']}</p>
+            </article>
+            <article className="feature-card animate-on-scroll delay-3">
+              <div className="feature-icon" aria-hidden="true">✨</div>
+              <h3>{t['feat9.title']}</h3>
+              <p>{t['feat9.desc']}</p>
+            </article>
+            <article className="feature-card animate-on-scroll delay-4">
+              <div className="feature-icon" aria-hidden="true">🎨</div>
+              <h3>{t['feat10.title']}</h3>
+              <p>{t['feat10.desc']}</p>
+            </article>
+            <article className="feature-card animate-on-scroll delay-5">
+              <div className="feature-icon" aria-hidden="true">🧷</div>
+              <h3>{t['feat11.title']}</h3>
+              <p>{t['feat11.desc']}</p>
+            </article>
           </div>
         </div>
       </section>
@@ -206,34 +235,34 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
             <p className="section-subtitle">{t['emotions.subtitle']}</p>
           </div>
           <div className="emotions-grid">
-            <div className="emotion-card joy animate-on-scroll delay-1">
+            <a className="emotion-card joy animate-on-scroll delay-1" href={`/${locale}/emotions/joy/`}>
               <img className="emotion-img" src={`${BASE}/images/smile_glow.png`} alt="Joy" />
               <span className="emotion-name">{t['emo.joy']}</span>
-            </div>
-            <div className="emotion-card excitement animate-on-scroll delay-2">
+            </a>
+            <a className="emotion-card excitement animate-on-scroll delay-2" href={`/${locale}/emotions/excitement/`}>
               <img className="emotion-img" src={`${BASE}/images/tiny_peach.png`} alt="Excited" />
               <span className="emotion-name">{t['emo.excitement']}</span>
-            </div>
-            <div className="emotion-card proud animate-on-scroll delay-3">
+            </a>
+            <a className="emotion-card proud animate-on-scroll delay-3" href={`/${locale}/emotions/pride/`}>
               <img className="emotion-img" src={`${BASE}/images/proud_olive.png`} alt="Proud" />
               <span className="emotion-name">{t['emo.proud']}</span>
-            </div>
-            <div className="emotion-card sad animate-on-scroll delay-4">
+            </a>
+            <a className="emotion-card sad animate-on-scroll delay-4" href={`/${locale}/emotions/sadness/`}>
               <img className="emotion-img" src={`${BASE}/images/awkward_teal.png`} alt="Sad" />
               <span className="emotion-name">{t['emo.sad']}</span>
-            </div>
-            <div className="emotion-card neutral animate-on-scroll delay-5">
+            </a>
+            <a className="emotion-card neutral animate-on-scroll delay-5" href={`/${locale}/emotions/calm/`}>
               <img className="emotion-img" src={`${BASE}/images/calm_oat.png`} alt="Neutral" />
               <span className="emotion-name">{t['emo.neutral']}</span>
-            </div>
-            <div className="emotion-card angry animate-on-scroll delay-6">
+            </a>
+            <a className="emotion-card angry animate-on-scroll delay-6" href={`/${locale}/emotions/anger/`}>
               <img className="emotion-img" src={`${BASE}/images/angry_coral.png`} alt="Angry" />
               <span className="emotion-name">{t['emo.angry']}</span>
-            </div>
-            <div className="emotion-card tired animate-on-scroll delay-6">
+            </a>
+            <a className="emotion-card tired animate-on-scroll delay-6" href={`/${locale}/emotions/tiredness/`}>
               <img className="emotion-img" src={`${BASE}/images/blank_blush.png`} alt="Tired" />
               <span className="emotion-name">{t['emo.tired']}</span>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -495,6 +524,8 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
                 <h4>{t['footer.product']}</h4>
                 <a href="#features">{t['nav.features']}</a>
                 <a href="#how-it-works">{t['nav.howItWorks']}</a>
+                <a href={`/${locale}/guides/`}>{resources.footerGuides}</a>
+                <a href={`/${locale}/emotions/`}>{resources.footerEmotions}</a>
                 <a href="#download">{t['nav.download']}</a>
               </div>
               <div className="footer-col">
