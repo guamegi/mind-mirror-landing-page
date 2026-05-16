@@ -67,9 +67,20 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ la
     image: `${BASE_URL}/images/og-image.png`,
   }
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: copy.breadcrumbHome, item: `${BASE_URL}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: copy.breadcrumbGuides, item: `${BASE_URL}/${locale}/guides/` },
+      { '@type': 'ListItem', position: 3, name: guide.title, item: `${BASE_URL}/${locale}/guides/${slug}/` },
+    ],
+  }
+
   return (
     <main className="content-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section className="content-hero">
         <div className="section-container">
           <nav className="content-breadcrumbs" aria-label="Breadcrumb">

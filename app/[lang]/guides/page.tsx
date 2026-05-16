@@ -43,9 +43,18 @@ export default async function GuidesIndexPage({ params }: { params: Promise<{ la
   const { lang } = await params
   const locale = lang as Lang
   const copy = resourceCopy[locale]
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: copy.breadcrumbHome, item: `${BASE_URL}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: copy.breadcrumbGuides, item: `${BASE_URL}/${locale}/guides/` },
+    ],
+  }
 
   return (
     <main className="content-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section className="content-hero">
         <div className="section-container">
           <nav className="content-breadcrumbs" aria-label="Breadcrumb">

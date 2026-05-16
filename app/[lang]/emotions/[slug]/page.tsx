@@ -67,9 +67,20 @@ export default async function EmotionDetailPage({ params }: { params: Promise<{ 
     image: `${BASE_URL}/images/og-image.png`,
   }
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: copy.breadcrumbHome, item: `${BASE_URL}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: copy.breadcrumbEmotions, item: `${BASE_URL}/${locale}/emotions/` },
+      { '@type': 'ListItem', position: 3, name: emotion.name, item: `${BASE_URL}/${locale}/emotions/${slug}/` },
+    ],
+  }
+
   return (
     <main className="content-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <section className="content-hero">
         <div className="section-container">
           <nav className="content-breadcrumbs" aria-label="Breadcrumb">

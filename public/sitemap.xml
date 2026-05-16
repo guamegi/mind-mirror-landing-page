@@ -4,50 +4,98 @@
 
   <url>
     <loc>https://mind-mirror.app/en/</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mind-mirror.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="ko"      href="https://mind-mirror.app/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja"      href="https://mind-mirror.app/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh"      href="https://mind-mirror.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/"/>
   </url>
 
   <url>
     <loc>https://mind-mirror.app/ko/</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mind-mirror.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="ko"      href="https://mind-mirror.app/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja"      href="https://mind-mirror.app/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh"      href="https://mind-mirror.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/"/>
   </url>
 
   <url>
     <loc>https://mind-mirror.app/ja/</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mind-mirror.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="ko"      href="https://mind-mirror.app/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja"      href="https://mind-mirror.app/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh"      href="https://mind-mirror.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/"/>
   </url>
 
   <url>
     <loc>https://mind-mirror.app/zh/</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mind-mirror.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="ko"      href="https://mind-mirror.app/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja"      href="https://mind-mirror.app/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh"      href="https://mind-mirror.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/features/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/features/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/features/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/features/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/"/>
   </url>
 
   <url>
@@ -61,6 +109,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/"/>
   </url>
+
   <url>
     <loc>https://mind-mirror.app/ko/guides/</loc>
     <lastmod>2026-05-16</lastmod>
@@ -72,6 +121,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/"/>
   </url>
+
   <url>
     <loc>https://mind-mirror.app/ja/guides/</loc>
     <lastmod>2026-05-16</lastmod>
@@ -83,6 +133,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/"/>
   </url>
+
   <url>
     <loc>https://mind-mirror.app/zh/guides/</loc>
     <lastmod>2026-05-16</lastmod>
@@ -106,6 +157,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/"/>
   </url>
+
   <url>
     <loc>https://mind-mirror.app/ko/emotions/</loc>
     <lastmod>2026-05-16</lastmod>
@@ -117,6 +169,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/"/>
   </url>
+
   <url>
     <loc>https://mind-mirror.app/ja/emotions/</loc>
     <lastmod>2026-05-16</lastmod>
@@ -128,6 +181,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/"/>
   </url>
+
   <url>
     <loc>https://mind-mirror.app/zh/emotions/</loc>
     <lastmod>2026-05-16</lastmod>
@@ -138,6 +192,822 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/features/ai-diary-chat/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/ai-diary-chat/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/features/ai-diary-chat/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/ai-diary-chat/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/features/ai-diary-chat/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/ai-diary-chat/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/features/ai-diary-chat/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/ai-diary-chat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/ai-diary-chat/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/features/photo-diary/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/photo-diary/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/features/photo-diary/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/photo-diary/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/features/photo-diary/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/photo-diary/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/features/photo-diary/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/photo-diary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/photo-diary/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/features/diary-to-poem/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-to-poem/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/features/diary-to-poem/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-to-poem/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/features/diary-to-poem/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-to-poem/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/features/diary-to-poem/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-to-poem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-to-poem/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/features/diary-proofreading/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-proofreading/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/features/diary-proofreading/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-proofreading/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/features/diary-proofreading/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-proofreading/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/features/diary-proofreading/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-proofreading/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-proofreading/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/features/diary-customization/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-customization/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/features/diary-customization/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-customization/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/features/diary-customization/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-customization/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/features/diary-customization/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/features/diary-customization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/features/diary-customization/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/guides/emotion-diary-how-to-start/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/emotion-diary-how-to-start/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/guides/emotion-diary-how-to-start/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/emotion-diary-how-to-start/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/guides/emotion-diary-how-to-start/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/emotion-diary-how-to-start/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/guides/emotion-diary-how-to-start/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/emotion-diary-how-to-start/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/emotion-diary-how-to-start/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/guides/night-reflection-template/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/night-reflection-template/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/guides/night-reflection-template/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/night-reflection-template/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/guides/night-reflection-template/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/night-reflection-template/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/guides/night-reflection-template/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/night-reflection-template/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/night-reflection-template/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/guides/journaling-when-you-feel-numb/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/guides/journaling-when-you-feel-numb/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/guides/journaling-when-you-feel-numb/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/journaling-when-you-feel-numb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/journaling-when-you-feel-numb/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/guides/photo-diary-for-busy-days/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/photo-diary-for-busy-days/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/guides/photo-diary-for-busy-days/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/photo-diary-for-busy-days/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/guides/photo-diary-for-busy-days/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/photo-diary-for-busy-days/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/guides/photo-diary-for-busy-days/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/photo-diary-for-busy-days/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/photo-diary-for-busy-days/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/guides/weekly-emotion-review/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/weekly-emotion-review/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/guides/weekly-emotion-review/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/weekly-emotion-review/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/guides/weekly-emotion-review/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/weekly-emotion-review/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/guides/weekly-emotion-review/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/guides/weekly-emotion-review/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/guides/weekly-emotion-review/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/emotions/joy/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/joy/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/emotions/joy/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/joy/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/emotions/joy/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/joy/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/emotions/joy/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/joy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/joy/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/emotions/sadness/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/sadness/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/emotions/sadness/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/sadness/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/emotions/sadness/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/sadness/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/emotions/sadness/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/sadness/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/sadness/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/emotions/calm/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/calm/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/emotions/calm/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/calm/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/emotions/calm/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/calm/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/emotions/calm/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/calm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/calm/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/emotions/anger/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/anger/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/emotions/anger/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/anger/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/emotions/anger/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/anger/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/emotions/anger/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/anger/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/anger/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/emotions/excitement/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/excitement/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/emotions/excitement/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/excitement/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/emotions/excitement/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/excitement/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/emotions/excitement/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/excitement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/excitement/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/emotions/pride/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/pride/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/emotions/pride/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/pride/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/emotions/pride/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/pride/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/emotions/pride/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/pride/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/pride/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/en/emotions/tiredness/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/tiredness/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ko/emotions/tiredness/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/tiredness/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/ja/emotions/tiredness/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/tiredness/"/>
+  </url>
+
+  <url>
+    <loc>https://mind-mirror.app/zh/emotions/tiredness/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mind-mirror.app/en/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://mind-mirror.app/ko/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mind-mirror.app/ja/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://mind-mirror.app/zh/emotions/tiredness/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mind-mirror.app/en/emotions/tiredness/"/>
   </url>
 
 </urlset>

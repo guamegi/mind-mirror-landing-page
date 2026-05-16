@@ -194,32 +194,32 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
             </article>
             <article className="feature-card animate-on-scroll delay-6">
               <div className="feature-icon" aria-hidden="true">📷</div>
-              <h3>{t['feat6.title']}</h3>
+              <h3><a className="feature-title-link" href={`/${locale}/features/photo-diary/`}>{t['feat6.title']}</a></h3>
               <p>{t['feat6.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-1">
               <div className="feature-icon" aria-hidden="true">💬</div>
-              <h3>{t['feat7.title']}</h3>
+              <h3><a className="feature-title-link" href={`/${locale}/features/ai-diary-chat/`}>{t['feat7.title']}</a></h3>
               <p>{t['feat7.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-2">
               <div className="feature-icon" aria-hidden="true">📝</div>
-              <h3>{t['feat8.title']}</h3>
+              <h3><a className="feature-title-link" href={`/${locale}/features/diary-to-poem/`}>{t['feat8.title']}</a></h3>
               <p>{t['feat8.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-3">
               <div className="feature-icon" aria-hidden="true">✨</div>
-              <h3>{t['feat9.title']}</h3>
+              <h3><a className="feature-title-link" href={`/${locale}/features/diary-proofreading/`}>{t['feat9.title']}</a></h3>
               <p>{t['feat9.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-4">
               <div className="feature-icon" aria-hidden="true">🎨</div>
-              <h3>{t['feat10.title']}</h3>
+              <h3><a className="feature-title-link" href={`/${locale}/features/diary-customization/`}>{t['feat10.title']}</a></h3>
               <p>{t['feat10.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-5">
               <div className="feature-icon" aria-hidden="true">🧷</div>
-              <h3>{t['feat11.title']}</h3>
+              <h3><a className="feature-title-link" href={`/${locale}/features/diary-customization/`}>{t['feat11.title']}</a></h3>
               <p>{t['feat11.desc']}</p>
             </article>
           </div>
@@ -524,6 +524,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
                 <h4>{t['footer.product']}</h4>
                 <a href="#features">{t['nav.features']}</a>
                 <a href="#how-it-works">{t['nav.howItWorks']}</a>
+                <a href={`/${locale}/features/`}>{resources.footerFeatures}</a>
                 <a href={`/${locale}/guides/`}>{resources.footerGuides}</a>
                 <a href={`/${locale}/emotions/`}>{resources.footerEmotions}</a>
                 <a href="#download">{t['nav.download']}</a>

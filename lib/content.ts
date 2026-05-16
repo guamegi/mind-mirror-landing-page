@@ -16,6 +16,13 @@ export type EmotionSlug =
   | 'pride'
   | 'tiredness'
 
+export type FeatureSlug =
+  | 'ai-diary-chat'
+  | 'photo-diary'
+  | 'diary-to-poem'
+  | 'diary-proofreading'
+  | 'diary-customization'
+
 type LocalizedGuide = {
   title: string
   description: string
@@ -33,11 +40,22 @@ type LocalizedEmotion = {
   prompt: string
 }
 
+type LocalizedFeature = {
+  title: string
+  description: string
+  intro: string
+  sections: { heading: string; body: string }[]
+  highlights: string[]
+}
+
 type ResourceCopy = {
   navLabel: string
   sectionBadge: string
   sectionTitle: string
   sectionSubtitle: string
+  featuresLabel: string
+  featuresDescription: string
+  featuresCta: string
   guidesLabel: string
   guidesDescription: string
   guidesCta: string
@@ -46,18 +64,23 @@ type ResourceCopy = {
   emotionsCta: string
   emotionCardCta: string
   breadcrumbHome: string
+  breadcrumbFeatures: string
   breadcrumbGuides: string
   breadcrumbEmotions: string
   backToHome: string
+  exploreFeatures: string
   exploreGuides: string
   exploreEmotions: string
+  featureListTitle: string
   guideListTitle: string
   emotionListTitle: string
+  featureHighlightsTitle: string
   articlePromptsTitle: string
   signalsTitle: string
   journalTipsTitle: string
   downloadTitle: string
   downloadBody: string
+  footerFeatures: string
   footerGuides: string
   footerEmotions: string
 }
@@ -68,6 +91,9 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     sectionBadge: '리소스',
     sectionTitle: '검색 유입용 콘텐츠를 제품 안쪽으로 붙였습니다',
     sectionSubtitle: '블로그를 따로 벌리지 않고, 감정 일기 사용 맥락과 7가지 감정 카테고리를 중심으로 읽을 거리를 연결합니다.',
+    featuresLabel: '기능 가이드 5개',
+    featuresDescription: 'AI 채팅 일기, 사진 일기, 시 변환, 글 교정, 스티커 꾸미기처럼 검색 의도가 뚜렷한 기능별 안내 페이지입니다.',
+    featuresCta: '기능 자세히 보기',
     guidesLabel: '가이드 5개',
     guidesDescription: '시작법, 템플릿, 무감각한 날 기록법, 사진 일기, 주간 리뷰까지 앱 사용 상황과 바로 연결되는 안내 페이지입니다.',
     guidesCta: '가이드 보기',
@@ -76,18 +102,23 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     emotionsCta: '감정 사전 보기',
     emotionCardCta: '감정 기록 팁 보기',
     breadcrumbHome: '홈',
+    breadcrumbFeatures: '기능 가이드',
     breadcrumbGuides: '가이드',
     breadcrumbEmotions: '감정 사전',
     backToHome: '홈으로 돌아가기',
+    exploreFeatures: '전체 기능 가이드',
     exploreGuides: '전체 가이드',
     exploreEmotions: '전체 감정 사전',
+    featureListTitle: '이 기능도 함께 살펴보세요',
     guideListTitle: '이런 가이드를 먼저 읽어보세요',
     emotionListTitle: '이 감정도 함께 살펴보세요',
+    featureHighlightsTitle: '이 기능에서 바로 되는 것',
     articlePromptsTitle: '바로 써볼 질문',
     signalsTitle: '이럴 때 자주 나타납니다',
     journalTipsTitle: '일기에 이렇게 남겨보세요',
     downloadTitle: '앱에서 바로 기록해보세요',
     downloadBody: 'Mind Mirror에서 감정을 기록하고 AI 분석으로 패턴을 다시 볼 수 있습니다.',
+    footerFeatures: '기능 가이드',
     footerGuides: '가이드',
     footerEmotions: '감정 사전',
   },
@@ -96,6 +127,9 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     sectionBadge: 'Resources',
     sectionTitle: 'Search content now lives inside the product story',
     sectionSubtitle: 'Instead of a detached blog, the site now links practical journaling guides and emotion dictionary pages around the app experience.',
+    featuresLabel: '5 Feature Guides',
+    featuresDescription: 'Dedicated landing pages cover AI chat journaling, photo diaries, diary-to-poem conversion, proofreading, and diary customization.',
+    featuresCta: 'See feature guide',
     guidesLabel: '5 Guides',
     guidesDescription: 'Start here for setup, templates, numb days, photo journaling, and weekly reviews that map directly to product use cases.',
     guidesCta: 'Browse guides',
@@ -104,18 +138,23 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     emotionsCta: 'Browse emotions',
     emotionCardCta: 'See journaling tips',
     breadcrumbHome: 'Home',
+    breadcrumbFeatures: 'Feature Guides',
     breadcrumbGuides: 'Guides',
     breadcrumbEmotions: 'Emotion Dictionary',
     backToHome: 'Back to home',
+    exploreFeatures: 'All feature guides',
     exploreGuides: 'All guides',
     exploreEmotions: 'All emotions',
+    featureListTitle: 'Explore these features too',
     guideListTitle: 'Start with these guides',
     emotionListTitle: 'Related emotions to explore',
+    featureHighlightsTitle: 'What you can do right away',
     articlePromptsTitle: 'Prompts to try now',
     signalsTitle: 'Common signs',
     journalTipsTitle: 'How to write it down',
     downloadTitle: 'Capture it in the app',
     downloadBody: 'Use Mind Mirror to log the moment and revisit your patterns with AI analysis.',
+    footerFeatures: 'Feature Guides',
     footerGuides: 'Guides',
     footerEmotions: 'Emotion Dictionary',
   },
@@ -124,6 +163,9 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     sectionBadge: 'リソース',
     sectionTitle: '検索流入向けコンテンツを製品導線の中に入れました',
     sectionSubtitle: '独立したブログではなく、感情日記の使い方と7つの感情カテゴリに沿ったガイドを用意します。',
+    featuresLabel: '5つの機能ガイド',
+    featuresDescription: 'AI対話日記、写真日記、詩への変換、文章校正、日記のカスタマイズなど、検索意図ごとに整理した機能ページです。',
+    featuresCta: '機能ガイドを見る',
     guidesLabel: '5つのガイド',
     guidesDescription: '始め方、テンプレート、無感覚な日、写真日記、週間レビューまで、アプリの使い方に直結する内容です。',
     guidesCta: 'ガイドを見る',
@@ -132,18 +174,23 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     emotionsCta: '感情辞典を見る',
     emotionCardCta: '記録のヒントを見る',
     breadcrumbHome: 'ホーム',
+    breadcrumbFeatures: '機能ガイド',
     breadcrumbGuides: 'ガイド',
     breadcrumbEmotions: '感情辞典',
     backToHome: 'ホームへ戻る',
+    exploreFeatures: '機能ガイド一覧',
     exploreGuides: 'ガイド一覧',
     exploreEmotions: '感情辞典一覧',
+    featureListTitle: 'あわせて見たい機能',
     guideListTitle: '先に読むとよいガイド',
     emotionListTitle: 'あわせて見たい感情',
+    featureHighlightsTitle: 'この機能ですぐできること',
     articlePromptsTitle: '今すぐ使える質問',
     signalsTitle: 'よく見られるサイン',
     journalTipsTitle: '日記にはこう残します',
     downloadTitle: 'アプリですぐ記録できます',
     downloadBody: 'Mind Mirrorで感情を記録し、AI分析で流れを振り返れます。',
+    footerFeatures: '機能ガイド',
     footerGuides: 'ガイド',
     footerEmotions: '感情辞典',
   },
@@ -152,6 +199,9 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     sectionBadge: '资源',
     sectionTitle: '把搜索内容直接放进产品路径里',
     sectionSubtitle: '不做松散博客，而是围绕情绪日记的使用场景和7种情绪分类建立内容页。',
+    featuresLabel: '5篇功能指南',
+    featuresDescription: '围绕 AI 对话日记、照片日记、日记转诗歌、文本润色和日记装饰等明确搜索意图建立功能页。',
+    featuresCta: '查看功能指南',
     guidesLabel: '5篇指南',
     guidesDescription: '包含开始方法、模板、麻木时怎么写、照片日记和每周复盘，和产品功能直接对应。',
     guidesCta: '查看指南',
@@ -160,18 +210,23 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     emotionsCta: '查看情绪词典',
     emotionCardCta: '查看记录建议',
     breadcrumbHome: '首页',
+    breadcrumbFeatures: '功能指南',
     breadcrumbGuides: '指南',
     breadcrumbEmotions: '情绪词典',
     backToHome: '返回首页',
+    exploreFeatures: '全部功能指南',
     exploreGuides: '全部指南',
     exploreEmotions: '全部情绪词典',
+    featureListTitle: '也可以看看这些功能',
     guideListTitle: '先看这些指南',
     emotionListTitle: '也可以看看这些情绪',
+    featureHighlightsTitle: '这个功能能直接帮你做什么',
     articlePromptsTitle: '现在就能用的问题',
     signalsTitle: '常见表现',
     journalTipsTitle: '可以这样写进日记',
     downloadTitle: '直接在应用里记录',
     downloadBody: '用 Mind Mirror 记录当下，再通过 AI 分析回看自己的情绪模式。',
+    footerFeatures: '功能指南',
     footerGuides: '指南',
     footerEmotions: '情绪词典',
   },
@@ -193,6 +248,14 @@ export const emotionSlugs: EmotionSlug[] = [
   'excitement',
   'pride',
   'tiredness',
+]
+
+export const featureSlugs: FeatureSlug[] = [
+  'ai-diary-chat',
+  'photo-diary',
+  'diary-to-poem',
+  'diary-proofreading',
+  'diary-customization',
 ]
 
 export const guides: Record<GuideSlug, Record<Lang, LocalizedGuide>> = {
@@ -669,10 +732,247 @@ export const emotions: Record<EmotionSlug, Record<Lang, LocalizedEmotion>> = {
   },
 }
 
+export const features: Record<FeatureSlug, Record<Lang, LocalizedFeature>> = {
+  'ai-diary-chat': {
+    ko: {
+      title: 'AI 채팅으로 자동 일기 생성',
+      description: 'AI와 자연스럽게 대화하면 내용이 정리되어 일기로 완성되는 기능 소개 페이지입니다.',
+      intro: '빈 화면 앞에서 막히는 사용자는 생각보다 많습니다. AI 채팅 일기는 질문을 주고받는 흐름 자체를 기록 재료로 바꿔, 일기 시작 장벽을 낮춥니다.',
+      sections: [
+        { heading: '대화 흐름으로 초안 만들기', body: '사용자는 하루를 떠올리며 답하기만 하면 되고, AI가 흐름을 묶어 초안 형태로 정리합니다.' },
+        { heading: '막히는 구간에서 질문 이어가기', body: '무슨 말을 써야 할지 모를 때 AI가 장면, 감정, 이유를 하나씩 물어보며 기록을 이어갑니다.' },
+        { heading: '완성 후 직접 다듬기', body: '자동으로 만들어진 일기는 그대로 저장하는 것이 아니라, 원하는 톤으로 직접 수정해 마무리할 수 있습니다.' },
+      ],
+      highlights: ['AI가 먼저 질문을 던져 기록 시작을 돕기', '대화 내용을 일기 문장으로 자동 정리', '완성 후 사용자가 자유롭게 편집 가능'],
+    },
+    en: {
+      title: 'Auto-Generate Diary Entries with AI Chat',
+      description: 'A feature page for users who want to turn natural conversation with AI into a finished diary entry.',
+      intro: 'A blank page stops more people than the writing itself. Conversational journaling lowers that barrier by turning guided chat into usable diary material.',
+      sections: [
+        { heading: 'Build a draft through conversation', body: 'Instead of composing from scratch, users answer prompts and let the AI organize the flow into a draft.' },
+        { heading: 'Keep writing when momentum drops', body: 'When the user gets stuck, the AI continues with questions about scenes, feelings, and context.' },
+        { heading: 'Edit the finished entry afterward', body: 'The result is not a locked output. Users can refine tone, details, and emphasis before saving.' },
+      ],
+      highlights: ['AI starts the conversation with useful prompts', 'Chat turns into structured diary text automatically', 'Users can edit the final diary freely'],
+    },
+    ja: {
+      title: 'AIチャットで自動日記作成',
+      description: 'AIとの自然な会話を、そのまま日記の完成形につなげる機能ページです。',
+      intro: '日記が続かない理由は、書けないことよりも書き始めにくさにあることが多いです。AI対話日記は会話の流れ自体を記録の材料に変えます。',
+      sections: [
+        { heading: '会話の流れから下書きを作る', body: 'ユーザーは質問に答えていくだけで、AIが内容を整理して日記の下書きにまとめます。' },
+        { heading: '止まった場面で質問をつなぐ', body: '何を書けばよいか迷った時も、AIが場面、感情、理由を順に聞いて記録を支えます。' },
+        { heading: '完成後に自分で整える', body: '自動生成された文章はそのまま固定されず、語調や細部を自分で調整できます。' },
+      ],
+      highlights: ['AIが先に質問して書き始めを助ける', '会話内容を日記文に自動整理', '保存前に自由に編集できる'],
+    },
+    zh: {
+      title: '通过 AI 对话自动生成日记',
+      description: '把和 AI 的自然对话整理成完整日记内容的功能页面。',
+      intro: '很多人不是不会写，而是不知道怎么开始。对话式日记把聊天过程本身变成记录素材，降低开头门槛。',
+      sections: [
+        { heading: '通过对话生成初稿', body: '用户只需要顺着提问回答，AI 就会把内容整理成日记初稿。' },
+        { heading: '卡住时继续引导', body: '当用户不知道接下来写什么时，AI 会继续追问场景、情绪和原因。' },
+        { heading: '完成后再手动润色', body: '自动生成的内容不是最终锁定稿，用户仍可自行修改语气和重点。' },
+      ],
+      highlights: ['AI 主动提问帮助开始记录', '聊天内容自动整理成日记文本', '保存前可以自由编辑'],
+    },
+  },
+  'photo-diary': {
+    ko: {
+      title: '사진으로 시작하는 자동 일기',
+      description: '사진 한 장에서 장면과 분위기를 읽어 일기 초안을 만드는 기능 소개 페이지입니다.',
+      intro: '바쁜 날에는 글보다 사진이 먼저 남습니다. 사진 기반 일기는 그 한 장을 출발점으로 삼아, 기록을 더 빠르게 이어가게 만듭니다.',
+      sections: [
+        { heading: '사진에서 장면 정보 읽기', body: 'AI가 사진 속 배경, 사물, 분위기를 파악해 그날의 핵심 장면을 글로 옮길 단서를 찾습니다.' },
+        { heading: '사진 바깥 맥락 붙이기', body: '사용자가 한두 줄만 보태도 사진 전후 상황이 정리되어 훨씬 더 자연스러운 일기 초안이 만들어집니다.' },
+        { heading: '짧은 기록 습관 유지하기', body: '텍스트 입력 부담이 큰 날에도 사진 한 장이면 기록 루틴을 끊지 않고 이어갈 수 있습니다.' },
+      ],
+      highlights: ['사진만으로도 일기 초안 시작', '장면과 분위기를 함께 반영', '바쁜 날 기록 루틴 유지에 적합'],
+    },
+    en: {
+      title: 'Start a Diary from a Photo',
+      description: 'A feature page for users who want one photo to become the entry point for an AI-written diary draft.',
+      intro: 'On busy days, the photo usually exists before the words do. Photo-based journaling uses that image as the fastest path back into the habit.',
+      sections: [
+        { heading: 'Read scene cues from the image', body: 'AI extracts useful context from the photo, including objects, setting, and mood cues that can anchor the entry.' },
+        { heading: 'Add off-camera context quickly', body: 'A short user note about what happened before or after the shot gives the draft much more emotional accuracy.' },
+        { heading: 'Keep the habit alive on crowded days', body: 'Even when typing feels heavy, one image is enough to keep daily reflection moving.' },
+      ],
+      highlights: ['Start from a single photo', 'Reflect both scene and mood', 'Useful for busy-day journaling'],
+    },
+    ja: {
+      title: '写真から始める自動日記',
+      description: '写真一枚から場面と雰囲気を読み取り、日記の下書きを作る機能ページです。',
+      intro: '忙しい日は文章より先に写真だけが残ることがあります。写真日記はその一枚を起点にして記録の習慣をつなぎます。',
+      sections: [
+        { heading: '写真から場面情報を読む', body: 'AIが背景や物、雰囲気を手がかりに、その日の中心となる場面を言語化します。' },
+        { heading: '写真の外側の文脈を足す', body: '撮影前後の出来事を一言添えるだけで、より自然な日記の流れになります。' },
+        { heading: '忙しい日でも習慣を切らない', body: '文字入力が重い日でも、写真一枚なら記録を止めずに続けやすくなります。' },
+      ],
+      highlights: ['写真一枚から下書きを開始', '場面と雰囲気を同時に反映', '忙しい日の記録習慣に向く'],
+    },
+    zh: {
+      title: '从照片开始写自动日记',
+      description: '从一张照片读取场景和氛围，并生成日记初稿的功能页面。',
+      intro: '忙碌的日子里，往往先留下的是照片而不是文字。照片日记就是把这张图变成重新进入记录状态的入口。',
+      sections: [
+        { heading: '从照片中读取场景线索', body: 'AI 会识别背景、物体和氛围，为日记内容提供场景支点。' },
+        { heading: '快速补上照片外的上下文', body: '用户只要补充一两句拍摄前后的情况，日记就会更自然完整。' },
+        { heading: '在忙碌时继续保持习惯', body: '即使不想长篇输入，只靠一张照片也能维持每日记录。' },
+      ],
+      highlights: ['从单张照片直接开始', '同时保留场景与情绪氛围', '适合忙碌日常的记录习惯'],
+    },
+  },
+  'diary-to-poem': {
+    ko: {
+      title: '일기를 시로 변환',
+      description: '평범한 하루 기록을 감성적인 시 표현으로 바꾸는 기능 소개 페이지입니다.',
+      intro: '같은 내용도 표현 방식이 바뀌면 전혀 다른 감정 여운을 남깁니다. 시 변환 기능은 일기를 보존하면서도 다른 문체로 다시 읽게 만듭니다.',
+      sections: [
+        { heading: '기록을 감성 문장으로 재구성', body: '하루의 사건과 감정을 압축해, 더 이미지 중심적이고 운율감 있는 표현으로 다시 정리합니다.' },
+        { heading: '같은 기억을 다른 톤으로 저장', body: '원본 일기는 그대로 두고, 별도의 시 버전을 만들어 같은 날을 다르게 보관할 수 있습니다.' },
+        { heading: '공유하기 좋은 형태 만들기', body: '긴 일기보다 짧고 인상적인 형태가 필요할 때 시 형식이 더 잘 맞습니다.' },
+      ],
+      highlights: ['일기를 감성적인 시 문체로 전환', '원본과 별도 버전으로 함께 보관', '공유용 기록으로도 활용 가능'],
+    },
+    en: {
+      title: 'Turn Diary Entries into Poems',
+      description: 'A feature page for converting ordinary diary writing into more expressive poetic language.',
+      intro: 'The memory does not change, but the reading experience does. Diary-to-poem conversion lets users preserve the same day in a more lyrical form.',
+      sections: [
+        { heading: 'Reshape plain writing into poetic lines', body: 'The AI condenses scenes and feelings into language that is more image-driven, reflective, and memorable.' },
+        { heading: 'Keep the original and the transformed version', body: 'Users can retain the diary itself while also saving a poem version of the same moment.' },
+        { heading: 'Create a format that is easier to share', body: 'A poem often travels better than a long diary paragraph when the user wants to revisit or share it later.' },
+      ],
+      highlights: ['Convert diary text into poetic language', 'Save both the original and poem version', 'Useful for memorable or shareable reflection'],
+    },
+    ja: {
+      title: '日記を詩に変換',
+      description: '日常の記録を、より感性的な詩の表現に変える機能ページです。',
+      intro: '内容は同じでも、表現が変わると残り方が変わります。詩変換は日記を保ちながら、別の温度で読み返せる形を作ります。',
+      sections: [
+        { heading: '記録を感性的な文章に再構成', body: '一日の出来事や感情を圧縮し、イメージや余韻を重視した表現へ整えます。' },
+        { heading: '同じ記憶を別のトーンで保存', body: '元の日記を残したまま、同じ日の詩バージョンを別で持つことができます。' },
+        { heading: '共有しやすい形にする', body: '長い日記より短く印象的な形式がほしい時、詩の形が役立ちます。' },
+      ],
+      highlights: ['日記を詩的な文体に変換', '原文と詩版を両方保存', '共有用の振り返りにも向く'],
+    },
+    zh: {
+      title: '把日记转换成诗歌',
+      description: '把日常记录改写成更有画面感和情绪张力的诗歌表达的功能页面。',
+      intro: '记忆本身没有变，但表达方式会改变它留下来的感觉。日记转诗歌就是把同一天保存成另一种语气。',
+      sections: [
+        { heading: '把普通记录改写成诗性语言', body: 'AI 会压缩场景和情绪，用更有画面感、节奏感的方式重新表达。' },
+        { heading: '保留原文，也保留诗歌版本', body: '用户可以同时保存原始日记和诗歌版本，不需要二选一。' },
+        { heading: '更适合回看和分享', body: '当用户想要更短、更有余味的表达形式时，诗歌版本会更合适。' },
+      ],
+      highlights: ['把日记转为诗歌文体', '原文与诗歌版本可同时保留', '适合回看或分享'],
+    },
+  },
+  'diary-proofreading': {
+    ko: {
+      title: 'AI 일기 교정',
+      description: '맞춤법, 띄어쓰기, 문장 흐름을 정리해 더 읽기 쉬운 일기로 다듬는 기능 소개 페이지입니다.',
+      intro: '일기를 쓸 때는 일단 쏟아내는 편이 맞지만, 나중에 다시 읽을 땐 정돈된 문장이 훨씬 좋습니다. 교정 기능은 감정을 해치지 않으면서 가독성을 올립니다.',
+      sections: [
+        { heading: '기본 문장 오류 정리', body: '맞춤법, 띄어쓰기, 어색한 연결 표현을 다듬어 읽는 흐름을 안정적으로 만듭니다.' },
+        { heading: '과한 수정 없이 톤 유지', body: '일기의 개인적인 말투를 과하게 바꾸지 않고, 사용자 목소리를 유지한 채 문장 완성도만 높입니다.' },
+        { heading: '보관용 기록 품질 높이기', body: '나중에 다시 읽거나 일부를 공유할 때도 더 자연스럽고 정돈된 상태로 남길 수 있습니다.' },
+      ],
+      highlights: ['맞춤법과 띄어쓰기 자동 보정', '개인적인 말투는 최대한 유지', '보관과 재독에 더 적합한 문장 완성도'],
+    },
+    en: {
+      title: 'Proofread Diary Entries with AI',
+      description: 'A feature page for cleaning up spelling, spacing, and sentence flow while preserving the user’s voice.',
+      intro: 'Raw writing is useful when capturing emotion, but clean writing is easier to revisit. Proofreading helps the diary read better without flattening the feeling behind it.',
+      sections: [
+        { heading: 'Correct surface-level writing issues', body: 'The AI fixes spelling, spacing, and awkward transitions so the entry becomes easier to read later.' },
+        { heading: 'Preserve the original voice', body: 'The goal is not to make every diary sound generic, but to keep the user’s tone while improving clarity.' },
+        { heading: 'Improve archive quality', body: 'A polished version is easier to revisit, quote, or share when users want to return to an entry months later.' },
+      ],
+      highlights: ['Fix spelling and spacing automatically', 'Keep the user’s tone intact', 'Improve long-term readability of saved entries'],
+    },
+    ja: {
+      title: 'AIで日記を校正',
+      description: '誤字脱字、空白、文の流れを整えて読みやすい日記にする機能ページです。',
+      intro: '書く時は感情を優先しても構いませんが、後から読み返す時は整った文章の方が役立ちます。校正機能は感情の温度を残したまま可読性を上げます。',
+      sections: [
+        { heading: '基本的な文の乱れを整える', body: '誤字脱字や不自然なつながりを修正し、読み返しやすい流れに整えます。' },
+        { heading: '話し方の雰囲気を残す', body: '個人的な口調を消しすぎず、ユーザーらしさを保ったまま文章の完成度を上げます。' },
+        { heading: '保管用の品質を高める', body: '後で読み返したり一部を共有したりする時にも、より自然な形で残せます。' },
+      ],
+      highlights: ['誤字脱字や空白を自動修正', '元の語り口をなるべく維持', '保存後の読みやすさを改善'],
+    },
+    zh: {
+      title: '用 AI 润色校对日记',
+      description: '修正错别字、空格和语句衔接，同时尽量保留用户原本语气的功能页面。',
+      intro: '写日记时先把感受写出来很重要，但回看时，清晰的表达会更有价值。润色功能就是在不削弱情绪的前提下提升可读性。',
+      sections: [
+        { heading: '修正常见书写问题', body: 'AI 会整理错别字、空格和不顺的连接，让日记以后读起来更轻松。' },
+        { heading: '尽量保留原本语气', body: '目标不是把每篇日记改成统一口吻，而是在保留个人表达的同时提高清晰度。' },
+        { heading: '提高长期保存质量', body: '以后重新阅读、摘录或分享时，整理过的版本会更自然。' },
+      ],
+      highlights: ['自动修正错别字与空格问题', '尽量保留个人语气', '提升长期保存与回看体验'],
+    },
+  },
+  'diary-customization': {
+    ko: {
+      title: '편지지와 스티커로 일기 꾸미기',
+      description: 'Grid·Color 편지지와 드래그앤드랍 스티커로 일기 페이지를 꾸미는 기능 소개 페이지입니다.',
+      intro: '일기가 단순한 텍스트 저장소를 넘어서려면, 기록 방식뿐 아니라 보는 방식도 중요합니다. 꾸미기 기능은 기록을 더 오래 남기고 싶은 페이지로 바꿉니다.',
+      sections: [
+        { heading: '그리드와 컬러로 배경 스타일 바꾸기', body: '편지지 배경을 그리드와 컬러 조합으로 바꿔, 같은 내용도 전혀 다른 분위기로 정리할 수 있습니다.' },
+        { heading: '스티커를 끌어다 놓아 자유롭게 배치', body: '드래그앤드랍 방식으로 스티커 위치를 직접 정하면서 장면 중심, 감정 중심, 기념 카드형 레이아웃을 만들 수 있습니다.' },
+        { heading: '기록을 다시 보고 싶은 페이지로 만들기', body: '텍스트만 남기는 것보다 꾸민 페이지가 다시 열어볼 확률이 높고, 특정 날을 더 선명하게 기억하게 만듭니다.' },
+      ],
+      highlights: ['Grid·Color 조합으로 편지지 스타일 변경', '스티커를 드래그앤드랍으로 자유 배치', '특별한 날 기록을 카드처럼 보관 가능'],
+    },
+    en: {
+      title: 'Customize Diary Pages with Stationery and Stickers',
+      description: 'A feature page for styling diary entries with grid and color backgrounds plus drag-and-drop stickers.',
+      intro: 'When journaling feels personal, presentation starts to matter too. Customization turns an entry from plain text into a page users want to reopen.',
+      sections: [
+        { heading: 'Change the background with grid and color presets', body: 'Users can switch stationery styles to give the same entry a softer, cleaner, brighter, or more playful tone.' },
+        { heading: 'Place stickers with drag and drop', body: 'Sticker placement becomes part of the storytelling, whether the user wants a memory card layout or a more expressive page.' },
+        { heading: 'Make saved entries more revisit-worthy', body: 'Decorated pages are easier to remember and often feel more meaningful than plain blocks of text alone.' },
+      ],
+      highlights: ['Adjust stationery style with grid and color options', 'Arrange stickers freely with drag and drop', 'Turn memorable entries into designed keepsakes'],
+    },
+    ja: {
+      title: '便箋とステッカーで日記を飾る',
+      description: 'Grid・Color便箋とドラッグ&ドロップのステッカーで日記ページを整える機能ページです。',
+      intro: '日記がただの文字の保存ではなくなるには、書き方だけでなく見え方も大切です。装飾機能は、記録をまた開きたくなるページへ変えます。',
+      sections: [
+        { heading: 'グリッドと色で背景の雰囲気を変える', body: '便箋の背景を変えることで、同じ内容でも静かな印象や明るい印象など違う見え方に整えられます。' },
+        { heading: 'ステッカーを自由に配置する', body: 'ドラッグ&ドロップで位置を決めながら、思い出カードのような構成や感情中心の構成を作れます。' },
+        { heading: 'あとから見返したくなるページにする', body: '文字だけの記録より、装飾されたページの方が記憶に残りやすく、再訪価値も高まります。' },
+      ],
+      highlights: ['Grid・Colorで便箋スタイルを変更', 'ステッカーを自由にドラッグ配置', '特別な日をカードのように保存できる'],
+    },
+    zh: {
+      title: '用信纸和贴纸装饰日记页面',
+      description: '通过 Grid·Color 信纸背景和拖拽贴纸来定制日记页面的功能页面。',
+      intro: '当日记变得更私人时，页面呈现本身也会影响回看体验。装饰功能会让一篇记录从纯文本变成更想再次打开的页面。',
+      sections: [
+        { heading: '用网格和颜色切换背景风格', body: '用户可以通过不同的信纸样式，让同一篇内容呈现出更柔和、更明亮或更有纪念感的氛围。' },
+        { heading: '用拖拽方式摆放贴纸', body: '贴纸不只是装饰，也能参与叙事，让页面更像一张情绪卡片或纪念页。' },
+        { heading: '让已保存的内容更值得回看', body: '相比纯文字页面，装饰后的页面更容易被记住，也更容易在以后被重新打开。' },
+      ],
+      highlights: ['通过 Grid·Color 切换信纸风格', '贴纸可自由拖拽摆放', '把特别的记录做成更有纪念感的页面'],
+    },
+  },
+}
+
 export function getGuide(lang: Lang, slug: GuideSlug) {
   return guides[slug][lang]
 }
 
 export function getEmotion(lang: Lang, slug: EmotionSlug) {
   return emotions[slug][lang]
+}
+
+export function getFeature(lang: Lang, slug: FeatureSlug) {
+  return features[slug][lang]
 }
