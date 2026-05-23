@@ -21,6 +21,7 @@ export type FeatureSlug =
   | 'photo-diary'
   | 'diary-to-poem'
   | 'diary-proofreading'
+  | 'vocabulary-suggestions'
   | 'diary-customization'
 
 type LocalizedGuide = {
@@ -91,8 +92,8 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     sectionBadge: '리소스',
     sectionTitle: '검색 유입용 콘텐츠를 제품 안쪽으로 붙였습니다',
     sectionSubtitle: '블로그를 따로 벌리지 않고, 감정 일기 사용 맥락과 7가지 감정 카테고리를 중심으로 읽을 거리를 연결합니다.',
-    featuresLabel: '기능 가이드 5개',
-    featuresDescription: 'AI 채팅 일기, 사진 일기, 시 변환, 글 교정, 스티커 꾸미기처럼 검색 의도가 뚜렷한 기능별 안내 페이지입니다.',
+    featuresLabel: '기능 가이드 6개',
+    featuresDescription: 'AI 채팅 일기, 사진 일기, 시 변환, 글 교정, 대체 어휘 추천, 스티커 꾸미기처럼 검색 의도가 뚜렷한 기능별 안내 페이지입니다.',
     featuresCta: '기능 자세히 보기',
     guidesLabel: '가이드 5개',
     guidesDescription: '시작법, 템플릿, 무감각한 날 기록법, 사진 일기, 주간 리뷰까지 앱 사용 상황과 바로 연결되는 안내 페이지입니다.',
@@ -127,8 +128,8 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     sectionBadge: 'Resources',
     sectionTitle: 'Search content now lives inside the product story',
     sectionSubtitle: 'Instead of a detached blog, the site now links practical journaling guides and emotion dictionary pages around the app experience.',
-    featuresLabel: '5 Feature Guides',
-    featuresDescription: 'Dedicated landing pages cover AI chat journaling, photo diaries, diary-to-poem conversion, proofreading, and diary customization.',
+    featuresLabel: '6 Feature Guides',
+    featuresDescription: 'Dedicated landing pages cover AI chat journaling, photo diaries, diary-to-poem conversion, proofreading, alternative vocabulary suggestions, and diary customization.',
     featuresCta: 'See feature guide',
     guidesLabel: '5 Guides',
     guidesDescription: 'Start here for setup, templates, numb days, photo journaling, and weekly reviews that map directly to product use cases.',
@@ -163,8 +164,8 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     sectionBadge: 'リソース',
     sectionTitle: '検索流入向けコンテンツを製品導線の中に入れました',
     sectionSubtitle: '独立したブログではなく、感情日記の使い方と7つの感情カテゴリに沿ったガイドを用意します。',
-    featuresLabel: '5つの機能ガイド',
-    featuresDescription: 'AI対話日記、写真日記、詩への変換、文章校正、日記のカスタマイズなど、検索意図ごとに整理した機能ページです。',
+    featuresLabel: '6つの機能ガイド',
+    featuresDescription: 'AI対話日記、写真日記、詩への変換、文章校正、言い換え語彙の提案、日記のカスタマイズなど、検索意図ごとに整理した機能ページです。',
     featuresCta: '機能ガイドを見る',
     guidesLabel: '5つのガイド',
     guidesDescription: '始め方、テンプレート、無感覚な日、写真日記、週間レビューまで、アプリの使い方に直結する内容です。',
@@ -199,8 +200,8 @@ export const resourceCopy: Record<Lang, ResourceCopy> = {
     sectionBadge: '资源',
     sectionTitle: '把搜索内容直接放进产品路径里',
     sectionSubtitle: '不做松散博客，而是围绕情绪日记的使用场景和7种情绪分类建立内容页。',
-    featuresLabel: '5篇功能指南',
-    featuresDescription: '围绕 AI 对话日记、照片日记、日记转诗歌、文本润色和日记装饰等明确搜索意图建立功能页。',
+    featuresLabel: '6篇功能指南',
+    featuresDescription: '围绕 AI 对话日记、照片日记、日记转诗歌、文本润色、替代表达推荐和日记装饰等明确搜索意图建立功能页。',
     featuresCta: '查看功能指南',
     guidesLabel: '5篇指南',
     guidesDescription: '包含开始方法、模板、麻木时怎么写、照片日记和每周复盘，和产品功能直接对应。',
@@ -255,6 +256,7 @@ export const featureSlugs: FeatureSlug[] = [
   'photo-diary',
   'diary-to-poem',
   'diary-proofreading',
+  'vocabulary-suggestions',
   'diary-customization',
 ]
 
@@ -915,6 +917,52 @@ export const features: Record<FeatureSlug, Record<Lang, LocalizedFeature>> = {
         { heading: '提高长期保存质量', body: '以后重新阅读、摘录或分享时，整理过的版本会更自然。' },
       ],
       highlights: ['自动修正错别字与空格问题', '尽量保留个人语气', '提升长期保存与回看体验'],
+    },
+  },
+  'vocabulary-suggestions': {
+    ko: {
+      title: '대체 어휘 추천',
+      description: '일기 문맥과 감정을 읽고 더 어울리는 표현을 추천하며, 마음에 드는 단어는 어휘 수첩에 저장할 수 있는 기능 소개 페이지입니다.',
+      intro: '같은 감정도 어떤 단어를 고르느냐에 따라 기록의 결이 달라집니다. 대체 어휘 추천은 맞춤법만 고치는 데서 멈추지 않고, 그날의 상황과 감정에 어울리는 더 풍부한 표현을 함께 제안합니다.',
+      sections: [
+        { heading: '문맥에 맞는 표현 다시 제안하기', body: 'AI가 일기 전체 흐름을 읽고 현재 표현 대신 쓸 수 있는 단어와 말투를 추천해, 문장이 더 섬세하게 살아나도록 돕습니다.' },
+        { heading: '감정 톤은 유지하고 표현 폭 넓히기', body: '예를 들어 "위로를 해줬다", "따뜻한 마음", "기분이 복잡했다" 같은 표현도 상황에 맞게 더 구체적이고 풍부한 말로 바꿔볼 수 있습니다.' },
+        { heading: '좋아하는 표현은 어휘 수첩에 저장하기', body: '추천받은 단어 중 마음에 드는 표현은 북마크 버튼으로 바로 저장하고, 나중에 어휘 수첩에서 다시 모아볼 수 있습니다.' },
+      ],
+      highlights: ['일기 문맥과 감정에 맞는 대체 표현 추천', '단순 교정을 넘어 더 풍부한 어휘 선택 지원', '마음에 드는 표현은 어휘 수첩에 북마크 저장'],
+    },
+    en: {
+      title: 'Alternative Vocabulary Suggestions',
+      description: 'A feature page for AI suggestions that offer better-fitting word choices based on diary context and let users save favorites to a vocabulary notebook.',
+      intro: 'The emotional texture of a diary often changes with word choice. This feature goes beyond proofreading and suggests richer alternatives that better match the situation and feeling in the entry.',
+      sections: [
+        { heading: 'Suggest better wording from context', body: 'The AI reads the surrounding diary context and recommends substitute words or phrases that fit the scene more precisely.' },
+        { heading: 'Expand expression without losing tone', body: 'Phrases like "I comforted them," "a warm heart," or "my feelings were complicated" can be reworked into language that feels more vivid and specific.' },
+        { heading: 'Save useful phrases to a vocabulary notebook', body: 'When a suggestion feels worth keeping, users can bookmark it right away and revisit saved expressions later in the vocabulary notebook.' },
+      ],
+      highlights: ['Recommend alternative wording based on diary context', 'Go beyond proofreading into richer emotional expression', 'Save favorite suggestions to a vocabulary notebook'],
+    },
+    ja: {
+      title: '言い換え語彙の提案',
+      description: '日記の文脈と感情に合う別の表現を提案し、気に入った語句を語彙ノートに保存できる機能ページです。',
+      intro: '同じ感情でも、どの言葉を選ぶかで記録の残り方は変わります。この機能は単なる校正にとどまらず、その日の状況や感情に合う、より豊かな表現を一緒に提案します。',
+      sections: [
+        { heading: '文脈に合う表現を提案する', body: 'AIが日記全体の流れを読み、今の表現の代わりに使える単語や言い回しを提案して、文章のニュアンスを細かく整えます。' },
+        { heading: '感情の温度を保ったまま語彙を広げる', body: 'たとえば「慰めてあげた」「あたたかい気持ち」「気分が複雑だった」のような表現も、場面に合うもっと具体的な言葉に広げられます。' },
+        { heading: '気に入った表現を語彙ノートに保存する', body: '提案された語句の中で気に入ったものは、ブックマークボタンですぐ保存し、あとで語彙ノートにまとめて見返せます。' },
+      ],
+      highlights: ['日記の文脈と感情に合う別表現を提案', '校正を超えて表現の幅を広げる', '気に入った語句は語彙ノートに保存可能'],
+    },
+    zh: {
+      title: '替代表达推荐',
+      description: '根据日记语境和情绪推荐更贴切的词语，并可把喜欢的表达保存到词汇笔记本的功能页面。',
+      intro: '同样的情绪，换一个词，留下的质感就会不同。这个功能不只做基础校对，还会结合当天的情境和感受，推荐更丰富、更贴切的表达。',
+      sections: [
+        { heading: '根据语境推荐更合适的表达', body: 'AI 会阅读整篇日记的上下文，推荐可以替换当前说法的词语和短句，让句子更细腻、更准确。' },
+        { heading: '保留情绪语气，同时拓宽词汇', body: '像“安慰了对方”“温暖的心意”“心情很复杂”这样的表达，也可以被扩展成更具体、更有画面的说法。' },
+        { heading: '把喜欢的表达保存到词汇笔记本', body: '如果某个推荐值得留下，用户可以直接用书签按钮保存，之后再到词汇笔记本里集中查看。' },
+      ],
+      highlights: ['根据日记语境和情绪推荐替代表达', '不止校对，还帮助表达更丰富', '喜欢的推荐可直接保存到词汇笔记本'],
     },
   },
   'diary-customization': {
