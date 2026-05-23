@@ -11,6 +11,8 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
   const resources = resourceCopy[locale]
   const langs: Lang[] = ['ko', 'en', 'ja', 'zh']
   const storeUrls = getStoreUrls(locale)
+  const ratingValue = '4.8'
+  const ratingCount = '100'
 
   return (
     <>
@@ -82,6 +84,11 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
             <div className="hero-actions">
               <a href="#download" className="btn-primary">{t['hero.cta']}</a>
               <a href="#features" className="btn-secondary">{t['hero.learnMore']}</a>
+            </div>
+            <div className="hero-rating" aria-label={`${t['hero.rating.label']}: ${ratingValue} out of 5, ${ratingCount} reviews`}>
+              <span className="hero-rating-stars" aria-hidden="true">★★★★★</span>
+              <span className="hero-rating-score">{ratingValue}/5</span>
+              <span className="hero-rating-copy">{t['hero.rating.basedOn']}</span>
             </div>
             <div className="hero-stats">
               <div className="stat">
