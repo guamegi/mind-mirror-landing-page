@@ -19,6 +19,30 @@ export const LANG_LABELS: Record<Lang, string> = {
 
 export const BASE_URL = 'https://mind-mirror.app'
 
+const APP_STORE_COUNTRY_BY_LANG: Record<Lang, string> = {
+  ko: 'kr',
+  en: 'us',
+  ja: 'jp',
+  zh: 'cn',
+}
+
+const PLAY_STORE_REGION_BY_LANG: Record<Lang, string> = {
+  ko: 'KR',
+  en: 'US',
+  ja: 'JP',
+  zh: 'CN',
+}
+
+export function getStoreUrls(lang: Lang) {
+  const appStoreCountry = APP_STORE_COUNTRY_BY_LANG[lang]
+  const playStoreRegion = PLAY_STORE_REGION_BY_LANG[lang]
+
+  return {
+    appStore: `https://apps.apple.com/${appStoreCountry}/app/mind-mirror/id6759994294?l=${lang}`,
+    playStore: `https://play.google.com/store/apps/details?id=com.mindmirror.mind_mirror&hl=${lang}&gl=${playStoreRegion}`,
+  }
+}
+
 type TranslationDict = Record<string, string>
 
 export const translations: Record<Lang, TranslationDict> = {

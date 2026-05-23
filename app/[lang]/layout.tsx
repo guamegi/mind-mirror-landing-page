@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { translations, type Lang, OG_LOCALE_MAP, BASE_URL } from '@/lib/i18n'
+import { translations, type Lang, OG_LOCALE_MAP, BASE_URL, getStoreUrls } from '@/lib/i18n'
 
 export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'ko' }, { lang: 'ja' }, { lang: 'zh' }]
@@ -51,9 +51,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
   }
 }
-
-const APP_STORE_URL = 'https://apps.apple.com/app/mind-mirror/id6759994294'
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.mindmirror.mind_mirror'
 
 const faqData: Record<Lang, { q: string; a: string }[]> = {
   ko: [
@@ -220,6 +217,7 @@ const howToData: Record<Lang, { name: string; description: string; steps: { name
 function buildJsonLd(lang: Lang) {
   const t = translations[lang]
   const pageUrl = `${BASE_URL}/${lang}/`
+  const storeUrls = getStoreUrls(lang)
 
   const website = {
     '@type': 'WebSite',
@@ -239,7 +237,7 @@ function buildJsonLd(lang: Lang) {
       '@type': 'ImageObject',
       url: `${BASE_URL}/images/og-image.png`,
     },
-    sameAs: [APP_STORE_URL, PLAY_STORE_URL],
+    sameAs: [storeUrls.appStore, storeUrls.playStore],
   }
 
   const application = {
@@ -252,7 +250,7 @@ function buildJsonLd(lang: Lang) {
     inLanguage: lang,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     author: { '@id': `${BASE_URL}/#organization` },
-    installUrl: [APP_STORE_URL, PLAY_STORE_URL],
+    installUrl: [storeUrls.appStore, storeUrls.playStore],
     featureList: [
       'AI emotion analysis powered by Google Gemini',
       'Conversational diary with AI',

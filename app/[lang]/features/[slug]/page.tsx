@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { BASE_URL, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
+import { BASE_URL, getStoreUrls, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
 import { featureSlugs, features, resourceCopy, type FeatureSlug } from '@/lib/content'
-
-const APP_STORE_URL = 'https://apps.apple.com/app/mind-mirror/id6759994294'
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.mindmirror.mind_mirror'
 
 function getDownloadCopy(locale: Lang, featureTitle: string) {
   switch (locale) {
@@ -91,6 +88,7 @@ export default async function FeatureDetailPage({ params }: { params: Promise<{ 
   const copy = resourceCopy[locale]
   const related = featureSlugs.filter((item) => item !== slug).slice(0, 3)
   const downloadCopy = getDownloadCopy(locale, feature.title)
+  const storeUrls = getStoreUrls(locale)
 
   const pageJsonLd = {
     '@context': 'https://schema.org',
@@ -164,8 +162,8 @@ export default async function FeatureDetailPage({ params }: { params: Promise<{ 
             <div className="sidebar-card sidebar-card--cta">
               <h2>{downloadCopy.title}</h2>
               <p>{downloadCopy.body}</p>
-              <a href={APP_STORE_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">{downloadCopy.appStore}</a>
-              <a href={PLAY_STORE_URL} className="btn-secondary" target="_blank" rel="noopener noreferrer">{downloadCopy.playStore}</a>
+              <a href={storeUrls.appStore} className="btn-primary" target="_blank" rel="noopener noreferrer">{downloadCopy.appStore}</a>
+              <a href={storeUrls.playStore} className="btn-secondary" target="_blank" rel="noopener noreferrer">{downloadCopy.playStore}</a>
             </div>
           </aside>
         </div>

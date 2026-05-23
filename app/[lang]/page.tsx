@@ -1,4 +1,4 @@
-import { translations, LANG_LABELS, type Lang } from '@/lib/i18n'
+import { getStoreUrls, translations, LANG_LABELS, type Lang } from '@/lib/i18n'
 import ClientSideInit from '@/components/ClientSideInit'
 import { resourceCopy } from '@/lib/content'
 
@@ -10,6 +10,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
   const t = translations[locale]
   const resources = resourceCopy[locale]
   const langs: Lang[] = ['ko', 'en', 'ja', 'zh']
+  const storeUrls = getStoreUrls(locale)
 
   return (
     <>
@@ -484,7 +485,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
             <h2 className="download-title" id="dl-heading">{t['dl.title']}</h2>
             <p className="download-subtitle">{t['dl.subtitle']}</p>
             <div className="store-buttons">
-              <a href="https://apps.apple.com/app/mind-mirror/id6759994294" className="store-btn" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+              <a href={storeUrls.appStore} className="store-btn" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.06.04c-.22.14-2.19 1.28-2.17 3.83.03 3.02 2.65 4.03 2.68 4.04l-.09.27z"/>
                   <path d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -494,7 +495,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
                   <span className="store-name">App Store</span>
                 </div>
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.mindmirror.mind_mirror" className="store-btn" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+              <a href={storeUrls.playStore} className="store-btn" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
                   <path d="M3.18 23.76c.37.21.8.26 1.24.14l12.44-7.18-2.82-2.82L3.18 23.76zm-1.63-20L13.42 12 1.55.24C1.21.4.99.75.99 1.18v21.64c0 .43.22.78.56.94zM20.44 10.45l-2.6-1.5L14.66 12l3.18 3.18 2.62-1.51c.74-.43.74-1.79-.02-2.22zM4.42.1L16.86 7.28 14.04 10.1 4.42.1z"/>
                 </svg>
