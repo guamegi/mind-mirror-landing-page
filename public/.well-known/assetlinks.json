@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.mindmirror.mind_mirror",
+    "sha256_cert_fingerprints": [
+      "3F:30:05:E3:42:60:BC:2E:A1:2F:81:7A:F6:B1:A5:11:ED:70:80:E9:A8:40:2B:F4:BE:71:CB:D4:2D:85:2F:6E",
+      "20:7A:AA:E3:0B:ED:0D:8D:E7:EC:A5:AF:2F:19:8D:2D:8D:63:D0:7E:78:24:AF:E9:F7:3B:44:E0:45:D0:F9:03"
+    ]
+  }
+}]

@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "543BQT7Y4W.com.mindmirror.mindMirror",
+        "paths": ["/invite", "/invite/*"]
+      }
+    ]
+  }
+}
