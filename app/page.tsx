@@ -3,16 +3,16 @@ import { BASE_URL, LANG_LABELS, SUPPORTED_LANGS } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/',
+    canonical: `${BASE_URL}/en/`,
     languages: {
       en: `${BASE_URL}/en/`,
       ko: `${BASE_URL}/ko/`,
       ja: `${BASE_URL}/ja/`,
       zh: `${BASE_URL}/zh/`,
-      'x-default': `${BASE_URL}/`,
+      'x-default': `${BASE_URL}/en/`,
     },
   },
-  robots: 'index, follow',
+  robots: 'noindex, follow',
 }
 
 const redirectScript = `
