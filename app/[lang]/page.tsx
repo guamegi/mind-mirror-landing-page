@@ -18,7 +18,6 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
       <nav className="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div className="nav-container">
           <a href="#" className="nav-logo" aria-label="Mind Mirror home">
-            <span className="logo-icon" aria-hidden="true">🪞</span>
             <span className="logo-text">Mind Mirror</span>
           </a>
           <div className="nav-links" id="navLinks" role="menubar">
@@ -515,7 +514,6 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
           <div className="footer-top">
             <div className="footer-brand">
               <a href="#" className="nav-logo" aria-label="Mind Mirror">
-                <span className="logo-icon" aria-hidden="true">🪞</span>
                 <span className="logo-text">Mind Mirror</span>
               </a>
               <p className="footer-tagline">{t['footer.tagline']}</p>
