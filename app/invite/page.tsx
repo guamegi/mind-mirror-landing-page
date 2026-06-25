@@ -97,7 +97,7 @@ export default function InvitePage() {
   return (
     <main style={styles.page}>
       <div style={styles.card}>
-        <div style={styles.icon}>🪞✨</div>
+        <img src="/images/splash_logo.png" alt="Mind Mirror" style={styles.logo} />
         <h1 style={styles.title}>MindMirror</h1>
         <p style={styles.subtitle}>{copy.subtitle}</p>
         <div style={styles.reward}>{copy.reward}</div>
@@ -140,9 +140,12 @@ const styles: Record<string, CSSProperties> = {
     border: '1px solid rgba(255,255,255,0.12)',
     boxSizing: 'border-box',
   },
-  icon: {
-    fontSize: '56px',
-    marginBottom: '16px',
+  logo: {
+    width: '96px',
+    height: 'auto',
+    objectFit: 'contain',
+    margin: '0 auto 16px',
+    display: 'block',
   },
   title: {
     margin: '0 0 8px',

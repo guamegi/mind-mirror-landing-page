@@ -235,7 +235,7 @@ function buildJsonLd(lang: Lang) {
     url: BASE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${BASE_URL}/images/og-image.png`,
+      url: `${BASE_URL}/images/splash_logo.png`,
     },
     sameAs: [storeUrls.appStore, storeUrls.playStore],
   }
