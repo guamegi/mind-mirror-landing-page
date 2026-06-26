@@ -293,7 +293,16 @@ func drawPhonePreview(copy: LocaleCopy, in rect: CGRect, scale: CGFloat = 1) {
   drawText("▥", in: CGRect(x: x + 164 * s, y: y + 56 * s, width: 30 * s, height: 28 * s), size: 27 * s, weight: .regular, color: color(135, 139, 145), alignment: .center)
   color(105, 91, 255).setFill()
   NSBezierPath(ovalIn: CGRect(x: x + w / 2 - 43 * s, y: y + 40 * s, width: 86 * s, height: 86 * s)).fill()
-  drawText("+", in: CGRect(x: x + w / 2 - 24 * s, y: y + 58 * s, width: 48 * s, height: 44 * s), size: 44 * s, weight: .regular, color: .white, alignment: .center)
+  let plusCenter = CGPoint(x: x + w / 2, y: y + 83 * s)
+  color(255, 255, 255).setStroke()
+  let plusPath = NSBezierPath()
+  plusPath.lineWidth = 4 * s
+  plusPath.lineCapStyle = .round
+  plusPath.move(to: CGPoint(x: plusCenter.x - 14 * s, y: plusCenter.y))
+  plusPath.line(to: CGPoint(x: plusCenter.x + 14 * s, y: plusCenter.y))
+  plusPath.move(to: CGPoint(x: plusCenter.x, y: plusCenter.y - 14 * s))
+  plusPath.line(to: CGPoint(x: plusCenter.x, y: plusCenter.y + 14 * s))
+  plusPath.stroke()
   drawText("▤", in: CGRect(x: x + w - 176 * s, y: y + 56 * s, width: 30 * s, height: 28 * s), size: 27 * s, weight: .regular, color: color(135, 139, 145), alignment: .center)
   drawText("⚙", in: CGRect(x: x + w - 74 * s, y: y + 54 * s, width: 34 * s, height: 34 * s), size: 27 * s, weight: .regular, color: color(135, 139, 145), alignment: .center)
 

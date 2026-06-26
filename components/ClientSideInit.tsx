@@ -121,26 +121,8 @@ export default function ClientSideInit({ lang }: { lang: string }) {
       counterObserver.observe(statsSection)
     }
 
-    // Parallax
-    const phone = document.querySelector('.phone-mockup') as HTMLElement | null
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!phone) return
-      const cx = window.innerWidth / 2
-      const cy = window.innerHeight / 2
-      const dx = (e.clientX - cx) / cx
-      const dy = (e.clientY - cy) / cy
-      phone.style.transform = `perspective(1200px) rotateY(${dx * 6}deg) rotateX(${-dy * 4}deg)`
-    }
-    const handleMouseLeave = () => {
-      if (phone) phone.style.transform = 'perspective(1200px) rotateY(0) rotateX(0)'
-    }
-    window.addEventListener('mousemove', handleMouseMove, { passive: true })
-    window.addEventListener('mouseleave', handleMouseLeave)
-
     return () => {
       window.removeEventListener('scroll', handleScroll)
-      window.removeEventListener('mousemove', handleMouseMove)
-      window.removeEventListener('mouseleave', handleMouseLeave)
       scrollObserver.disconnect()
     }
   }, [lang])

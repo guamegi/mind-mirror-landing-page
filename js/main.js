@@ -167,22 +167,6 @@ function animateCounters() {
   observer.observe(statsSection);
 }
 
-/* ── Phone mockup parallax ── */
-function initParallax() {
-  const phone = document.querySelector('.phone-mockup');
-  if (!phone) return;
-  window.addEventListener('mousemove', (e) => {
-    const cx = window.innerWidth / 2;
-    const cy = window.innerHeight / 2;
-    const dx = (e.clientX - cx) / cx;
-    const dy = (e.clientY - cy) / cy;
-    phone.style.transform = `perspective(1200px) rotateY(${dx * 6}deg) rotateX(${-dy * 4}deg)`;
-  }, { passive: true });
-  window.addEventListener('mouseleave', () => {
-    phone.style.transform = 'perspective(1200px) rotateY(0) rotateX(0)';
-  });
-}
-
 /* ── Mobile lang dropdown ── */
 function initLangDropdown() {
   const dropdown = document.getElementById('langDropdown');
@@ -234,5 +218,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initFloatingCards();
   initSmoothScroll();
   animateCounters();
-  initParallax();
 });
