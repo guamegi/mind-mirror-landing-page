@@ -1,4 +1,4 @@
-import { getStoreUrls, translations, LANG_LABELS, type Lang } from '@/lib/i18n'
+import { getPhonePreviewPath, getStoreUrls, translations, LANG_LABELS, type Lang } from '@/lib/i18n'
 import ClientSideInit from '@/components/ClientSideInit'
 import { resourceCopy } from '@/lib/content'
 
@@ -102,40 +102,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
           {/* Phone mockup */}
           <div className="hero-visual" aria-hidden="true">
             <div className="phone-mockup">
-              <div className="phone-notch"></div>
-              <div className="phone-screen">
-                <div className="app-header">
-                  <span className="app-date">2026. 04. 27</span>
-                  <span className="app-icons">🔔 👤</span>
-                </div>
-                <div className="mood-card-wrap">
-                  <div className="mood-card-inner">
-                    <span className="mood-card-emoji">😊</span>
-                    <div>
-                      <div className="mood-card-label">{t['app.week']}</div>
-                      <div className="mood-card-val">{t['app.emotion']}</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="diary-item-mini">
-                  <div className="di-row">
-                    <div className="di-dot"></div>
-                    <span className="di-title">{t['app.diary']}</span>
-                  </div>
-                  <span className="di-preview">{t['app.preview']}</span>
-                  <div className="di-tags">
-                    <span className="di-tag">#성장</span>
-                    <span className="di-tag">#희망</span>
-                  </div>
-                </div>
-                <div className="ai-bar">
-                  <span className="ai-sparkle">✨</span>
-                  <div>
-                    <div className="ai-bar-label">{t['app.ai']}</div>
-                    <div className="ai-bar-prev">{t['app.aiprev']}</div>
-                  </div>
-                </div>
-              </div>
+              <img className="phone-screen-image" src={`${BASE}${getPhonePreviewPath(locale)}`} alt="" />
             </div>
             <div className="floating-card card-1">
               <span className="fc-emoji">🧠</span>

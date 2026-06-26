@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { BASE_URL, getStoreUrls, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
+import { BASE_URL, getOgImageUrl, getStoreUrls, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
 import { featureSlugs, features, resourceCopy, type FeatureSlug } from '@/lib/content'
 
 function getDownloadCopy(locale: Lang, featureTitle: string) {
@@ -50,6 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const locale = lang as Lang
   const feature = features[slug as FeatureSlug][locale]
   const url = `${BASE_URL}/${locale}/features/${slug}/`
+  const ogImageUrl = getOgImageUrl(locale)
 
   return {
     title: `${feature.title} | Mind Mirror`,
@@ -66,13 +67,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       title: `${feature.title} | Mind Mirror`,
       description: feature.description,
       locale: OG_LOCALE_MAP[locale],
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${feature.title} | Mind Mirror`,
       description: feature.description,
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
   }
 }

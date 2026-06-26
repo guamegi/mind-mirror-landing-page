@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { BASE_URL, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
+import { BASE_URL, getOgImageUrl, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
 import { emotionSlugs, emotions, resourceCopy, type EmotionSlug } from '@/lib/content'
 
 export async function generateStaticParams() {
@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const locale = lang as Lang
   const emotion = emotions[slug as EmotionSlug][locale]
   const url = `${BASE_URL}/${locale}/emotions/${slug}/`
+  const ogImageUrl = getOgImageUrl(locale)
 
   return {
     title: `${emotion.name} | Mind Mirror`,
@@ -33,13 +34,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       title: `${emotion.name} | Mind Mirror`,
       description: emotion.summary,
       locale: OG_LOCALE_MAP[locale],
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${emotion.name} | Mind Mirror`,
       description: emotion.summary,
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
   }
 }
@@ -64,7 +65,7 @@ export default async function EmotionDetailPage({ params }: { params: Promise<{ 
     author: { '@type': 'Organization', name: 'Mind Mirror' },
     publisher: { '@type': 'Organization', name: 'Mind Mirror' },
     mainEntityOfPage: `${BASE_URL}/${locale}/emotions/${slug}/`,
-    image: `${BASE_URL}/images/og-image.png`,
+    image: getOgImageUrl(locale),
   }
 
   const breadcrumbJsonLd = {

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { translations, type Lang, OG_LOCALE_MAP, BASE_URL, getStoreUrls } from '@/lib/i18n'
+import { translations, type Lang, OG_LOCALE_MAP, BASE_URL, getOgImageUrl, getStoreUrls } from '@/lib/i18n'
 
 export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'ko' }, { lang: 'ja' }, { lang: 'zh' }]
@@ -8,6 +8,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
   const t = translations[lang as Lang]
+  const ogImageUrl = getOgImageUrl(lang as Lang)
   const ogLocaleAlternates = ['en_US', 'ko_KR', 'ja_JP', 'zh_CN'].filter(l => l !== OG_LOCALE_MAP[lang as Lang])
 
   return {
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       alternateLocale: ogLocaleAlternates,
       images: [
         {
-          url: `${BASE_URL}/images/og-image.png`,
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: 'Mind Mirror — AI Emotion Diary App',
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       card: 'summary_large_image',
       title: t['meta.title'],
       description: t['meta.description'],
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
   }
 }

@@ -19,6 +19,14 @@ export const LANG_LABELS: Record<Lang, string> = {
 
 export const BASE_URL = 'https://mind-mirror.app'
 
+export function getOgImageUrl(lang: Lang) {
+  return `${BASE_URL}/images/og-image-${lang}.png`
+}
+
+export function getPhonePreviewPath(lang: Lang) {
+  return `/images/phone-calendar-${lang}.png`
+}
+
 const APP_STORE_COUNTRY_BY_LANG: Record<Lang, string> = {
   ko: 'kr',
   en: 'us',

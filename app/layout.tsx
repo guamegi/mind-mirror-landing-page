@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/images/og-image.png',
+        url: '/images/og-image-en.png',
         width: 1200,
         height: 630,
         alt: 'Mind Mirror app preview',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: defaultTitle,
     description: defaultDescription,
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image-en.png'],
   },
   icons: {
     icon: [

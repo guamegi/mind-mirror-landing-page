@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BASE_URL, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
+import { BASE_URL, getOgImageUrl, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
 import { emotionSlugs, emotions, resourceCopy } from '@/lib/content'
 
 export async function generateStaticParams() {
@@ -12,6 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const locale = lang as Lang
   const copy = resourceCopy[locale]
   const url = `${BASE_URL}/${locale}/emotions/`
+  const ogImageUrl = getOgImageUrl(locale)
 
   return {
     title: `Mind Mirror ${copy.breadcrumbEmotions}`,
@@ -28,13 +29,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       title: `Mind Mirror ${copy.breadcrumbEmotions}`,
       description: copy.emotionsDescription,
       locale: OG_LOCALE_MAP[locale],
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
     twitter: {
       card: 'summary_large_image',
       title: `Mind Mirror ${copy.breadcrumbEmotions}`,
       description: copy.emotionsDescription,
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
   }
 }

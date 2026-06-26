@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { BASE_URL, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
+import { BASE_URL, getOgImageUrl, type Lang, OG_LOCALE_MAP, SUPPORTED_LANGS } from '@/lib/i18n'
 import { guideSlugs, guides, resourceCopy, type GuideSlug } from '@/lib/content'
 
 export async function generateStaticParams() {
@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const locale = lang as Lang
   const guide = guides[slug as GuideSlug][locale]
   const url = `${BASE_URL}/${locale}/guides/${slug}/`
+  const ogImageUrl = getOgImageUrl(locale)
 
   return {
     title: `${guide.title} | Mind Mirror`,
@@ -33,13 +34,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       title: `${guide.title} | Mind Mirror`,
       description: guide.description,
       locale: OG_LOCALE_MAP[locale],
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${guide.title} | Mind Mirror`,
       description: guide.description,
-      images: [`${BASE_URL}/images/og-image.png`],
+      images: [ogImageUrl],
     },
   }
 }
@@ -64,7 +65,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ la
     author: { '@type': 'Organization', name: 'Mind Mirror' },
     publisher: { '@type': 'Organization', name: 'Mind Mirror' },
     mainEntityOfPage: `${BASE_URL}/${locale}/guides/${slug}/`,
-    image: `${BASE_URL}/images/og-image.png`,
+    image: getOgImageUrl(locale),
   }
 
   const breadcrumbJsonLd = {
