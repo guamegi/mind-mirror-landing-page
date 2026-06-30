@@ -56,19 +56,19 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 const faqData: Record<Lang, { q: string; a: string }[]> = {
   ko: [
     {
-      q: 'Mind Mirror는 무엇인가요?',
-      a: 'Mind Mirror는 Google Gemini AI가 매일의 일기를 분석하여 감정 패턴을 발견하고 마음 건강 인사이트를 제공하는 무료 AI 감정 일기 앱입니다.',
+      q: 'Mind Mirror(마인드미러, MindMirror)는 무엇인가요?',
+      a: '마인드미러(Mind Mirror, MindMirror)는 Google Gemini AI가 매일의 일기를 분석하여 감정 패턴을 발견하고 마음 건강 인사이트를 제공하는 무료 AI 감정 일기 앱입니다.',
     },
     {
-      q: 'Mind Mirror는 무료인가요?',
-      a: '네, Mind Mirror는 App Store와 Google Play에서 무료로 다운로드할 수 있습니다.',
+      q: 'Mind Mirror(마인드미러)는 무료인가요?',
+      a: '네, 마인드미러는 App Store와 Google Play에서 무료로 다운로드할 수 있습니다.',
     },
     {
-      q: 'Mind Mirror는 어떤 AI 기술을 사용하나요?',
-      a: 'Mind Mirror는 Google의 최신 AI 모델인 Gemini를 사용하여 일기를 분석하고 감정 요약, 심층 분석, 맞춤 조언을 제공합니다.',
+      q: 'Mind Mirror(마인드미러)는 어떤 AI 기술을 사용하나요?',
+      a: '마인드미러는 Google의 최신 AI 모델인 Gemini를 사용하여 일기를 분석하고 감정 요약, 심층 분석, 맞춤 조언을 제공합니다.',
     },
     {
-      q: 'Mind Mirror가 지원하는 언어는 무엇인가요?',
+      q: 'Mind Mirror(마인드미러)가 지원하는 언어는 무엇인가요?',
       a: '한국어, 영어, 일본어, 중국어 4개 언어를 지원합니다.',
     },
     {
@@ -178,8 +178,8 @@ const faqData: Record<Lang, { q: string; a: string }[]> = {
 
 const howToData: Record<Lang, { name: string; description: string; steps: { name: string; text: string }[] }> = {
   ko: {
-    name: 'Mind Mirror 사용 방법',
-    description: '3단계로 Mind Mirror AI 감정 일기 앱을 시작하세요',
+    name: 'Mind Mirror(마인드미러, MindMirror) 사용 방법',
+    description: '3단계로 마인드미러 AI 감정 일기 앱을 시작하세요',
     steps: [
       { name: '일기 작성', text: '오늘 하루를 자유롭게 기록하세요. 텍스트와 사진으로 소중한 순간을 담을 수 있습니다.' },
       { name: 'AI 분석', text: 'AI가 일기를 분석하여 감정 요약, 심층 분석, 맞춤 조언을 자동으로 생성합니다.' },
@@ -225,6 +225,7 @@ function buildJsonLd(lang: Lang) {
     '@id': `${BASE_URL}/#website`,
     url: BASE_URL,
     name: 'Mind Mirror',
+    alternateName: ['마인드미러', '마인드 미러', 'MindMirror', 'mindmirror'],
     description: t['meta.description'],
     inLanguage: lang,
   }
@@ -233,6 +234,7 @@ function buildJsonLd(lang: Lang) {
     '@type': 'Organization',
     '@id': `${BASE_URL}/#organization`,
     name: 'Mind Mirror',
+    alternateName: ['마인드미러', '마인드 미러', 'MindMirror', 'mindmirror'],
     url: BASE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -245,6 +247,7 @@ function buildJsonLd(lang: Lang) {
     '@type': 'MobileApplication',
     '@id': `${pageUrl}#app`,
     name: 'Mind Mirror',
+    alternateName: ['마인드미러', '마인드 미러', 'MindMirror', 'mindmirror'],
     description: t['meta.description'],
     applicationCategory: 'HealthApplication',
     operatingSystem: 'iOS, Android',

@@ -30,7 +30,7 @@ const translations = {
     'app.aiprev': '당신의 감정 패턴...',
     'features.badge': '주요 기능',
     'features.title': '마음을 이해하는 기능들',
-    'features.subtitle': 'Mind Mirror는 당신의 내면을 더 깊이 이해할 수 있도록 도와줍니다',
+    'features.subtitle': '마인드미러는 당신의 내면을 더 깊이 이해할 수 있도록 도와줍니다',
     'feat1.title': 'AI 감정 분석',
     'feat1.desc': 'AI가 일기를 분석하여 감정 요약, 주요 감정, 심리 분석, 맞춤 조언을 제공합니다.',
     'feat1.tag1': 'AI 감정 인식',
