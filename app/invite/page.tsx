@@ -13,7 +13,7 @@ const copyByLocale = {
     open: '앱에서 열기',
     download: '앱 다운로드',
     mobileOnly: '모바일에서 이용 가능해요',
-    note: '앱이 설치되어 있으면 자동으로 열려요. 설치되어 있지 않다면 스토어로 이동해요.',
+    note: '앱 설치 후 이 화면으로 돌아와 앱에서 열기를 눌러야 보상을 받을 수 있어요.',
   },
   en: {
     htmlLang: 'en',
@@ -23,7 +23,7 @@ const copyByLocale = {
     open: 'Open in App',
     download: 'Download App',
     mobileOnly: 'Available on mobile devices',
-    note: 'If the app is installed, it should open automatically. Otherwise, you will be redirected to the store.',
+    note: 'After installing the app, return to this page and tap Open in App to receive the reward.',
   },
   ja: {
     htmlLang: 'ja',
@@ -33,7 +33,7 @@ const copyByLocale = {
     open: 'アプリで開く',
     download: 'アプリをダウンロード',
     mobileOnly: 'モバイル端末で利用できます',
-    note: 'アプリがインストールされていれば自動で開きます。未インストールの場合はストアへ移動します。',
+    note: 'アプリをインストールした後、この画面に戻って「アプリで開く」をタップすると報酬を受け取れます。',
   },
   zh: {
     htmlLang: 'zh',
@@ -43,7 +43,7 @@ const copyByLocale = {
     open: '在应用中打开',
     download: '下载应用',
     mobileOnly: '仅可在移动设备上使用',
-    note: '如果已安装应用，会自动打开。若未安装，将跳转到应用商店。',
+    note: '安装应用后，请返回此页面并点击“在应用中打开”即可领取奖励。',
   },
 } as const
 
@@ -72,8 +72,8 @@ export default function InvitePage() {
   const deepLink = `mindmirror://invite?ref=${refCode}`
   const isIOS = /iPhone|iPad|iPod/i.test(userAgent)
   const isAndroid = /Android/i.test(userAgent)
-  const appStoreUrl = 'https://apps.apple.com/app/id000000000'
-  const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.mindmirror.mind_mirror'
+  const appStoreUrl = `https://apps.apple.com/kr/app/mind-mirror/id6759994294?l=${locale}`
+  const playStoreUrl = `https://play.google.com/store/apps/details?id=com.mindmirror.mind_mirror&hl=${locale}&gl=KR`
   const storeUrl = isIOS ? appStoreUrl : isAndroid ? playStoreUrl : '#'
 
   const handleOpen = () => {
