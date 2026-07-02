@@ -141,7 +141,7 @@ const styles: Record<string, CSSProperties> = {
     boxSizing: 'border-box',
   },
   logo: {
-    width: '96px',
+    width: '56px',
     height: 'auto',
     objectFit: 'contain',
     margin: '0 auto 16px',

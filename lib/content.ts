@@ -968,14 +968,14 @@ export const features: Record<FeatureSlug, Record<Lang, LocalizedFeature>> = {
   'diary-customization': {
     ko: {
       title: '편지지와 스티커로 일기 꾸미기',
-      description: 'Grid·Color 편지지와 드래그앤드랍 스티커로 일기 페이지를 꾸미는 기능 소개 페이지입니다.',
+      description: 'Template·Color 편지지와 드래그앤드랍 스티커로 일기 페이지를 꾸미는 기능 소개 페이지입니다.',
       intro: '일기가 단순한 텍스트 저장소를 넘어서려면, 기록 방식뿐 아니라 보는 방식도 중요합니다. 꾸미기 기능은 기록을 더 오래 남기고 싶은 페이지로 바꿉니다.',
       sections: [
-        { heading: '그리드와 컬러로 배경 스타일 바꾸기', body: '편지지 배경을 그리드와 컬러 조합으로 바꿔, 같은 내용도 전혀 다른 분위기로 정리할 수 있습니다.' },
+        { heading: '템플릿과 컬러로 배경 스타일 바꾸기', body: '편지지 배경을 템플릿과 컬러 조합으로 바꿔, 같은 내용도 전혀 다른 분위기로 정리할 수 있습니다.' },
         { heading: '스티커를 끌어다 놓아 자유롭게 배치', body: '드래그앤드랍 방식으로 스티커 위치를 직접 정하면서 장면 중심, 감정 중심, 기념 카드형 레이아웃을 만들 수 있습니다.' },
         { heading: '기록을 다시 보고 싶은 페이지로 만들기', body: '텍스트만 남기는 것보다 꾸민 페이지가 다시 열어볼 확률이 높고, 특정 날을 더 선명하게 기억하게 만듭니다.' },
       ],
-      highlights: ['Grid·Color 조합으로 편지지 스타일 변경', '스티커를 드래그앤드랍으로 자유 배치', '특별한 날 기록을 카드처럼 보관 가능'],
+      highlights: ['Template·Color 조합으로 편지지 스타일 변경', '스티커를 드래그앤드랍으로 자유 배치', '특별한 날 기록을 카드처럼 보관 가능'],
     },
     en: {
       title: 'Customize Diary Pages with Stationery and Stickers',
