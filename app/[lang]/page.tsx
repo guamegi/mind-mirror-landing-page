@@ -214,17 +214,33 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
               <img className="emotion-img" src={`${BASE}/images/proud_olive.png`} alt="Proud" />
               <span className="emotion-name">{t['emo.proud']}</span>
             </a>
-            <a className="emotion-card sad animate-on-scroll delay-4" href={`/${locale}/emotions/sadness/`}>
-              <img className="emotion-img" src={`${BASE}/images/awkward_teal.png`} alt="Sad" />
-              <span className="emotion-name">{t['emo.sad']}</span>
+            <a className="emotion-card grateful animate-on-scroll delay-4" href={`/${locale}/emotions/gratitude/`}>
+              <img className="emotion-img" src={`${BASE}/images/love_blush.webp`} alt="Grateful" />
+              <span className="emotion-name">{t['emo.grateful']}</span>
             </a>
-            <a className="emotion-card neutral animate-on-scroll delay-5" href={`/${locale}/emotions/calm/`}>
+            <a className="emotion-card satisfied animate-on-scroll delay-5" href={`/${locale}/emotions/satisfaction/`}>
+              <img className="emotion-img" src={`${BASE}/images/soft_apricot.webp`} alt="Satisfied" />
+              <span className="emotion-name">{t['emo.satisfied']}</span>
+            </a>
+            <a className="emotion-card neutral animate-on-scroll delay-6" href={`/${locale}/emotions/calm/`}>
               <img className="emotion-img" src={`${BASE}/images/calm_oat.png`} alt="Neutral" />
               <span className="emotion-name">{t['emo.neutral']}</span>
             </a>
             <a className="emotion-card angry animate-on-scroll delay-6" href={`/${locale}/emotions/anger/`}>
               <img className="emotion-img" src={`${BASE}/images/angry_coral.png`} alt="Angry" />
               <span className="emotion-name">{t['emo.angry']}</span>
+            </a>
+            <a className="emotion-card lonely animate-on-scroll delay-6" href={`/${locale}/emotions/loneliness/`}>
+              <img className="emotion-img" src={`${BASE}/images/surprised_sage.webp`} alt="Lonely" />
+              <span className="emotion-name">{t['emo.lonely']}</span>
+            </a>
+            <a className="emotion-card anxious animate-on-scroll delay-6" href={`/${locale}/emotions/anxiety/`}>
+              <img className="emotion-img" src={`${BASE}/images/awkward_teal.png`} alt="Anxious" />
+              <span className="emotion-name">{t['emo.anxious']}</span>
+            </a>
+            <a className="emotion-card sad animate-on-scroll delay-6" href={`/${locale}/emotions/sadness/`}>
+              <img className="emotion-img" src={`${BASE}/images/sad_cream.webp`} alt="Sad" />
+              <span className="emotion-name">{t['emo.sad']}</span>
             </a>
             <a className="emotion-card tired animate-on-scroll delay-6" href={`/${locale}/emotions/tiredness/`}>
               <img className="emotion-img" src={`${BASE}/images/blank_blush.png`} alt="Tired" />

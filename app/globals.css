@@ -11,8 +11,11 @@
   --secondary:      #FF6B9D;
   --accent-teal:    #00D4AA;
   --joy:            #FFD93D;
+  --grateful:       #FF9FBB;
+  --satisfied:      #FFB86B;
   --neutral:        #74B9FF;
   --sad:            #A29BFE;
+  --lonely:         #8EC5B6;
   --anxious:        #FDCB6E;
   --angry:          #FF7675;
 
@@ -483,6 +486,12 @@ section { padding: 96px 0; }
 .emotion-card.neutral:hover { border-color: var(--neutral); box-shadow: 0 8px 32px rgba(116,185,255,0.20); }
 .emotion-card.sad   { border-color: rgba(162,155,254,0.40); }
 .emotion-card.sad:hover { border-color: var(--sad); box-shadow: 0 8px 32px rgba(162,155,254,0.20); }
+.emotion-card.grateful { border-color: rgba(255,159,187,0.42); }
+.emotion-card.grateful:hover { border-color: var(--grateful); box-shadow: 0 8px 32px rgba(255,159,187,0.20); }
+.emotion-card.satisfied { border-color: rgba(255,184,107,0.42); }
+.emotion-card.satisfied:hover { border-color: var(--satisfied); box-shadow: 0 8px 32px rgba(255,184,107,0.20); }
+.emotion-card.lonely { border-color: rgba(142,197,182,0.42); }
+.emotion-card.lonely:hover { border-color: var(--lonely); box-shadow: 0 8px 32px rgba(142,197,182,0.20); }
 .emotion-card.anxious { border-color: rgba(253,203,110,0.40); }
 .emotion-card.anxious:hover { border-color: var(--anxious); box-shadow: 0 8px 32px rgba(253,203,110,0.20); }
 .emotion-card.angry { border-color: rgba(255,118,117,0.40); }

@@ -77,7 +77,7 @@ const faqData: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: 'Mind Mirror는 어떤 감정을 분석할 수 있나요?',
-      a: '기쁨, 슬픔, 설렘, 뿌듯, 평온, 화남, 피곤 등 7가지 감정 카테고리를 AI가 자동으로 분석합니다.',
+      a: '기쁨, 설렘, 뿌듯, 감사, 만족, 평온, 화남, 외로움, 불안, 슬픔, 피곤 등 11가지 감정 카테고리를 AI가 자동으로 분석합니다.',
     },
     {
       q: '사진으로도 일기를 쓸 수 있나요?',
@@ -107,7 +107,7 @@ const faqData: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: 'What emotions can Mind Mirror analyze?',
-      a: "Mind Mirror's AI automatically identifies 7 emotion categories: Joy, Sadness, Excitement, Pride, Calm, Anger, and Tiredness.",
+      a: "Mind Mirror's AI automatically identifies 11 emotion categories: Joy, Excitement, Pride, Gratitude, Satisfaction, Calm, Anger, Loneliness, Anxiety, Sadness, and Tiredness.",
     },
     {
       q: 'Can I create a diary entry from a photo?',
@@ -137,7 +137,7 @@ const faqData: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: 'どんな感情を分析できますか？',
-      a: '喜び、悲しみ、ときめき、誇り、平静、怒り、疲れの7種類の感情をAIが自動的に分析します。',
+      a: '喜び、ときめき、誇り、感謝、満足、平静、怒り、寂しさ、不安、悲しみ、疲れの11種類の感情をAIが自動的に分析します。',
     },
     {
       q: '写真から日記を作れますか？',
@@ -167,7 +167,7 @@ const faqData: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: '可以分析哪些情感？',
-      a: 'AI自动识别7种情感类型：喜悦、悲伤、心动、自豪、平静、愤怒和疲惫。',
+      a: 'AI自动识别11种情感类型：喜悦、心动、自豪、感谢、满足、平静、愤怒、孤独、焦虑、悲伤和疲惫。',
     },
     {
       q: '可以用照片写日记吗？',
