@@ -14,8 +14,7 @@ export default function ClientSideInit({ lang }: { lang: string }) {
       if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙'
     }
 
-    const savedTheme = localStorage.getItem('mm_theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    const savedTheme = localStorage.getItem('mm_theme') || 'light'
     applyTheme(savedTheme)
 
     const themeToggle = document.getElementById('themeToggle')
