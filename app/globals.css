@@ -1327,3 +1327,16 @@ section { padding: 96px 0; }
   .spot-title { font-size: 1.6rem; }
   .rc-person { min-width: 60px; }
 }
+
+/* Original homepage illustrations, shared across feature cards and steps. */
+.diary-feature-icon {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.diary-feature-icon--small { width: 28px; height: 28px; }
+.ai-feat-icon:has(.diary-feature-icon) { background: transparent; }

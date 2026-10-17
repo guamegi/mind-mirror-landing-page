@@ -257,6 +257,8 @@ function buildJsonLd(lang: Lang) {
     installUrl: [storeUrls.appStore, storeUrls.playStore],
     featureList: [
       'AI emotion analysis powered by Google Gemini',
+      'Shared diary',
+      'Tarot card reflection',
       'Conversational diary with AI',
       'Photo-based automatic diary generation',
       'Diary to poem conversion',

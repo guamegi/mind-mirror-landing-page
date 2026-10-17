@@ -1,3 +1,4 @@
+import FeatureIcon from '@/components/FeatureIcon'
 import { getPhonePreviewPath, getStoreUrls, translations, LANG_LABELS, type Lang } from '@/lib/i18n'
 import ClientSideInit from '@/components/ClientSideInit'
 import { resourceCopy } from '@/lib/content'
@@ -105,15 +106,15 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
               <img className="phone-screen-image" src={`${BASE}${getPhonePreviewPath(locale)}`} alt="" />
             </div>
             <div className="floating-card card-1">
-              <span className="fc-emoji">🧠</span>
+              <FeatureIcon index={0} size="small" />
               <span>{t['float.analysis']}</span>
             </div>
             <div className="floating-card card-2">
-              <span className="fc-emoji">📈</span>
+              <FeatureIcon index={1} size="small" />
               <span>{t['float.trend']}</span>
             </div>
             <div className="floating-card card-3">
-              <span className="fc-emoji">🔒</span>
+              <FeatureIcon index={2} size="small" />
               <span>{t['float.privacy']}</span>
             </div>
           </div>
@@ -130,7 +131,7 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
           </div>
           <div className="features-grid">
             <article className="feature-card featured animate-on-scroll delay-1">
-              <div className="feature-icon" aria-hidden="true">🤖</div>
+              <div className="feature-icon"><FeatureIcon index={0} /></div>
               <h3>{t['feat1.title']}</h3>
               <p>{t['feat1.desc']}</p>
               <div className="feature-tags">
@@ -140,54 +141,64 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
               </div>
             </article>
             <article className="feature-card animate-on-scroll delay-2">
-              <div className="feature-icon" aria-hidden="true">📊</div>
+              <div className="feature-icon"><FeatureIcon index={1} /></div>
               <h3>{t['feat2.title']}</h3>
               <p>{t['feat2.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-3">
-              <div className="feature-icon" aria-hidden="true">🔒</div>
+              <div className="feature-icon"><FeatureIcon index={2} /></div>
               <h3>{t['feat3.title']}</h3>
               <p>{t['feat3.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-4">
-              <div className="feature-icon" aria-hidden="true">🌙</div>
+              <div className="feature-icon"><FeatureIcon index={3} /></div>
               <h3>{t['feat4.title']}</h3>
               <p>{t['feat4.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-5">
-              <div className="feature-icon" aria-hidden="true">🌍</div>
+              <div className="feature-icon"><FeatureIcon index={4} /></div>
               <h3>{t['feat5.title']}</h3>
               <p>{t['feat5.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-6">
-              <div className="feature-icon" aria-hidden="true">📷</div>
+              <div className="feature-icon"><FeatureIcon index={5} /></div>
               <h3><a className="feature-title-link" href={`/${locale}/features/photo-diary/`}>{t['feat6.title']}</a></h3>
               <p>{t['feat6.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-1">
-              <div className="feature-icon" aria-hidden="true">💬</div>
+              <div className="feature-icon"><FeatureIcon index={6} /></div>
               <h3><a className="feature-title-link" href={`/${locale}/features/ai-diary-chat/`}>{t['feat7.title']}</a></h3>
               <p>{t['feat7.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-2">
-              <div className="feature-icon" aria-hidden="true">📝</div>
+              <div className="feature-icon"><FeatureIcon index={7} /></div>
               <h3><a className="feature-title-link" href={`/${locale}/features/diary-to-poem/`}>{t['feat8.title']}</a></h3>
               <p>{t['feat8.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-3">
-              <div className="feature-icon" aria-hidden="true">✨</div>
+              <div className="feature-icon"><FeatureIcon index={8} /></div>
               <h3><a className="feature-title-link" href={`/${locale}/features/diary-proofreading/`}>{t['feat9.title']}</a></h3>
               <p>{t['feat9.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-4">
-              <div className="feature-icon" aria-hidden="true">🎨</div>
+              <div className="feature-icon"><FeatureIcon index={9} /></div>
               <h3><a className="feature-title-link" href={`/${locale}/features/diary-customization/`}>{t['feat10.title']}</a></h3>
               <p>{t['feat10.desc']}</p>
             </article>
             <article className="feature-card animate-on-scroll delay-5">
-              <div className="feature-icon" aria-hidden="true">🧷</div>
+              <div className="feature-icon"><FeatureIcon index={10} /></div>
               <h3><a className="feature-title-link" href={`/${locale}/features/diary-customization/`}>{t['feat11.title']}</a></h3>
               <p>{t['feat11.desc']}</p>
+            </article>
+            <article className="feature-card animate-on-scroll delay-6">
+              <div className="feature-icon"><FeatureIcon index={11} /></div>
+              <h3>{t['feat12.title']}</h3>
+              <p>{t['feat12.desc']}</p>
+            </article>
+            <article className="feature-card animate-on-scroll delay-1">
+              <div className="feature-icon"><FeatureIcon index={12} /></div>
+              <h3>{t['feat13.title']}</h3>
+              <p>{t['feat13.desc']}</p>
             </article>
           </div>
         </div>
@@ -260,15 +271,15 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
           </div>
           <div className="ai-features-grid">
             {[
-              { icon: '📷', titleKey: 'aifeat.photo.title', descKey: 'aifeat.photo.desc', delay: 1 },
-              { icon: '🎭', titleKey: 'aifeat.poem.title', descKey: 'aifeat.poem.desc', delay: 2 },
-              { icon: '✏️', titleKey: 'aifeat.correct.title', descKey: 'aifeat.correct.desc', delay: 3 },
-              { icon: '💬', titleKey: 'aifeat.chat.title', descKey: 'aifeat.chat.desc', delay: 4 },
-              { icon: '💝', titleKey: 'aifeat.relation.title', descKey: 'aifeat.relation.desc', delay: 5 },
-              { icon: '🔮', titleKey: 'aifeat.fortune.title', descKey: 'aifeat.fortune.desc', delay: 6 },
+              { icon: 5, titleKey: 'aifeat.photo.title', descKey: 'aifeat.photo.desc', delay: 1 },
+              { icon: 7, titleKey: 'aifeat.poem.title', descKey: 'aifeat.poem.desc', delay: 2 },
+              { icon: 8, titleKey: 'aifeat.correct.title', descKey: 'aifeat.correct.desc', delay: 3 },
+              { icon: 6, titleKey: 'aifeat.chat.title', descKey: 'aifeat.chat.desc', delay: 4 },
+              { icon: 13, titleKey: 'aifeat.relation.title', descKey: 'aifeat.relation.desc', delay: 5 },
+              { icon: 12, titleKey: 'aifeat.fortune.title', descKey: 'aifeat.fortune.desc', delay: 6 },
             ].map(({ icon, titleKey, descKey, delay }) => (
               <article key={titleKey} className={`ai-feat-card animate-on-scroll delay-${delay}`}>
-                <div className="ai-feat-icon" aria-hidden="true">{icon}</div>
+                <div className="ai-feat-icon" aria-hidden="true"><FeatureIcon index={icon} /></div>
                 <h3>{t[titleKey]}</h3>
                 <p>{t[descKey]}</p>
               </article>
@@ -437,21 +448,21 @@ export default async function LangPage({ params }: { params: Promise<{ lang: str
           <div className="steps">
             <article className="step animate-on-scroll delay-1">
               <div className="step-num">01</div>
-              <span className="step-visual" aria-hidden="true">✍️</span>
+              <span className="step-visual"><FeatureIcon index={14} /></span>
               <h3>{t['step1.title']}</h3>
               <p>{t['step1.desc']}</p>
             </article>
             <div className="step-arrow animate-on-scroll delay-2" aria-hidden="true">→</div>
             <article className="step animate-on-scroll delay-3">
               <div className="step-num">02</div>
-              <span className="step-visual" aria-hidden="true">🤖</span>
+              <span className="step-visual"><FeatureIcon index={0} /></span>
               <h3>{t['step2.title']}</h3>
               <p>{t['step2.desc']}</p>
             </article>
             <div className="step-arrow animate-on-scroll delay-4" aria-hidden="true">→</div>
             <article className="step animate-on-scroll delay-5">
               <div className="step-num">03</div>
-              <span className="step-visual" aria-hidden="true">💡</span>
+              <span className="step-visual"><FeatureIcon index={15} /></span>
               <h3>{t['step3.title']}</h3>
               <p>{t['step3.desc']}</p>
             </article>
