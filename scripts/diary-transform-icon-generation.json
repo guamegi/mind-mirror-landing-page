@@ -1,0 +1,5 @@
+{
+  "mode": "built-in image_gen; transparent background",
+  "asset": "public/images/diary-transform-icon.png",
+  "prompt": "Use case: stylized-concept. Asset type: single transparent website feature icon for diary transformation, readable at 56px. Reference image is STYLE REFERENCE ONLY: match its handmade colored-pencil stationery illustration, warm gray outlines, muted lavender and cream with tiny peach accents. Subject: two small diary pages side by side, left page with three simple straight handwritten lines, right page with three flowing lavender expressive lines and a tiny peach heart; a clear curved lavender arrow between the pages points from the original page to the rewritten page, expressing rewriting a diary into a different writing style. Simple compact silhouette, medium bold organic outlines, sparse textured pencil fills, flat front view. Center the entire symbol in square canvas with 12 percent transparent padding. No readable text, no letters, no paper bird, no origami, no shadows, no background, no border, no 3D. One icon only."
+}
